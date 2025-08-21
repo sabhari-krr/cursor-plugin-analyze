@@ -1,17 +1,20 @@
 {
-  "name": "wployalty/wp-loaylty-migration",
-  "description": "WPLoyalty migration addon",
-  "minimum-stability": "stable",
-  "license": "proprietary",
-  "require": {
-    "parsecsv/php-parsecsv": "^1.3",
-    "ext-json": "*",
-    "yahnis-elsts/plugin-update-checker": ">=v5.0",
-    "vlucas/valitron": "^1.4"
-  },
+  "name": "wployalty/wp-loyalty-migration",
+  "description": "Migration tool for WPLoyalty plugin data",
+  "type": "project",
+  "license": "GPL3 or Later",
   "autoload": {
     "psr-4": {
-      "Wlrm\\": ""
+      "WPLoyalty\\Migration\\App\\": "app/",
+      "WPLoyalty\\Migration\\Core\\": "Core/",
+      "WPLoyalty\\Migration\\Pro\\": "Pro/"
     }
+  },
+  "require": {
+    "php": ">=7.3",
+    "vlucas/valitron": "^1.4"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^9.0"
   }
 }
