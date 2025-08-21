@@ -1,0 +1,1485 @@
+:root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 222.2 84% 4.9%;
+    --radius: 0.5rem
+}
+
+*, :after, :before {
+    --tw-border-spacing-x: 0;
+    --tw-border-spacing-y: 0;
+    --tw-translate-x: 0;
+    --tw-translate-y: 0;
+    --tw-rotate: 0;
+    --tw-skew-x: 0;
+    --tw-skew-y: 0;
+    --tw-scale-x: 1;
+    --tw-scale-y: 1;
+    --tw-pan-x: ;
+    --tw-pan-y: ;
+    --tw-pinch-zoom: ;
+    --tw-scroll-snap-strictness: proximity;
+    --tw-gradient-from-position: ;
+    --tw-gradient-via-position: ;
+    --tw-gradient-to-position: ;
+    --tw-ordinal: ;
+    --tw-slashed-zero: ;
+    --tw-numeric-figure: ;
+    --tw-numeric-spacing: ;
+    --tw-numeric-fraction: ;
+    --tw-ring-inset: ;
+    --tw-ring-offset-width: 0px;
+    --tw-ring-offset-color: #fff;
+    --tw-ring-color: rgba(59, 130, 246, .5);
+    --tw-ring-offset-shadow: 0 0 #0000;
+    --tw-ring-shadow: 0 0 #0000;
+    --tw-shadow: 0 0 #0000;
+    --tw-shadow-colored: 0 0 #0000;
+    --tw-blur: ;
+    --tw-brightness: ;
+    --tw-contrast: ;
+    --tw-grayscale: ;
+    --tw-hue-rotate: ;
+    --tw-invert: ;
+    --tw-saturate: ;
+    --tw-sepia: ;
+    --tw-drop-shadow: ;
+    --tw-backdrop-blur: ;
+    --tw-backdrop-brightness: ;
+    --tw-backdrop-contrast: ;
+    --tw-backdrop-grayscale: ;
+    --tw-backdrop-hue-rotate: ;
+    --tw-backdrop-invert: ;
+    --tw-backdrop-opacity: ;
+    --tw-backdrop-saturate: ;
+    --tw-backdrop-sepia:
+}
+
+::backdrop {
+    --tw-border-spacing-x: 0;
+    --tw-border-spacing-y: 0;
+    --tw-translate-x: 0;
+    --tw-translate-y: 0;
+    --tw-rotate: 0;
+    --tw-skew-x: 0;
+    --tw-skew-y: 0;
+    --tw-scale-x: 1;
+    --tw-scale-y: 1;
+    --tw-pan-x: ;
+    --tw-pan-y: ;
+    --tw-pinch-zoom: ;
+    --tw-scroll-snap-strictness: proximity;
+    --tw-gradient-from-position: ;
+    --tw-gradient-via-position: ;
+    --tw-gradient-to-position: ;
+    --tw-ordinal: ;
+    --tw-slashed-zero: ;
+    --tw-numeric-figure: ;
+    --tw-numeric-spacing: ;
+    --tw-numeric-fraction: ;
+    --tw-ring-inset: ;
+    --tw-ring-offset-width: 0px;
+    --tw-ring-offset-color: #fff;
+    --tw-ring-color: rgba(59, 130, 246, .5);
+    --tw-ring-offset-shadow: 0 0 #0000;
+    --tw-ring-shadow: 0 0 #0000;
+    --tw-shadow: 0 0 #0000;
+    --tw-shadow-colored: 0 0 #0000;
+    --tw-blur: ;
+    --tw-brightness: ;
+    --tw-contrast: ;
+    --tw-grayscale: ;
+    --tw-hue-rotate: ;
+    --tw-invert: ;
+    --tw-saturate: ;
+    --tw-sepia: ;
+    --tw-drop-shadow: ;
+    --tw-backdrop-blur: ;
+    --tw-backdrop-brightness: ;
+    --tw-backdrop-contrast: ;
+    --tw-backdrop-grayscale: ;
+    --tw-backdrop-hue-rotate: ;
+    --tw-backdrop-invert: ;
+    --tw-backdrop-opacity: ;
+    --tw-backdrop-saturate: ;
+    --tw-backdrop-sepia:
+}
+
+.wprelay-section-1 {
+    border-radius: .5rem;
+    --tw-shadow: 0 10px 15px -3px rgba(0, 0, 0, .1), 0 4px 6px -4px rgba(0, 0, 0, .1);
+    --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)
+}
+
+.wprelay-section-1 .wprelay-header-section {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 1.5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 1.5rem
+}
+
+.wprelay-section-1 .wprelay-header-section .wprelay-header-right-main {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    width: 100%
+}
+
+.wprelay-section-1 .wprelay-header-section .wprelay-header-right-main .wprelay-header-rightside {
+    display: flex;
+    flex-basis: 0.25rem;
+    flex-direction: column;
+    flex-grow: 1;
+    flex-shrink: 1;
+    gap: .75rem
+}
+
+.wprelay-section-1 .wprelay-header-section .wprelay-header-right-main .wprelay-header-rightside .wprelay-code {
+    align-items: flex-end;
+    display: flex !important;
+    gap: .25rem;
+    width: 100%
+}
+
+.wprelay-section-1 .wprelay-header-section .wprelay-header-right-main .wprelay-header-rightside .wprelay-code #wprelay-referral-link-copy {
+    cursor: pointer
+}
+
+.wprelay-section-1 .wprelay-header-section .wprelay-header-right-main .wprelay-header-rightside .wprelay-code p {
+    overflow-wrap: break-word;
+    width: 100%
+}
+
+.wprelay-section-1 .wprelay-header-section .wprelay-header-right-main .wprelay-header-rightside .wprelay-code span {
+    width: 20%
+}
+
+.wprelay-section-1 .wprelay-header-section .wprelay-header-right-main .wprelay-header-rightside .wprelay-code span i {
+    height: 2.5rem;
+    white-space: nowrap;
+    width: 2.5rem
+}
+
+.wprelay-section-1 .wprelay-header-section .wprelay-header-right-main .wprelay-image {
+    border-radius: .5rem;
+    height: 60px;
+    width: 60px
+}
+
+.wprelay-section-1 .wprelay-header-section .wprelay-header-right-main .wprelay-email-currency-section {
+    display: flex;
+    gap: 6rem;
+    justify-content: space-between
+}
+
+.wprelay-section-1 .wprelay-header-section .wprelay-header-right-main .wprelay-email-currency-section a, .wprelay-section-1 .wprelay-header-section .wprelay-header-right-main .wprelay-email-currency-section p {
+    margin: 0 !important;
+    padding: 0 !important
+}
+
+.wprelay-section-1 .wprelay-header-section .wprelay-header-right-main .wprelay-email-currency-section p {
+    font-size: 1.125rem;
+    font-weight: 700;
+    line-height: 1.75rem
+}
+
+.wprelay-section-1 .wprelay-header-section .wprelay-header-right-main .wprelay-email-currency-section a {
+    font-size: .875rem;
+    line-height: 1.25rem
+}
+
+.wprelay-section-1 .wprelay-header-section .currencies-list select {
+    height: 2rem;
+    padding-bottom: 0 !important;
+    padding-top: 0 !important;
+    width: 9rem !important
+}
+
+.wprelay-section-1 .wprelay-tabs-section {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    padding-bottom: 1.5rem !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    padding-top: 1.5rem !important;
+    width: 100%
+}
+
+.wprelay-section-1 .wprelay-tabs-section, .wprelay-section-1 .wprelay-tabs-section a {
+    margin: 0 !important
+}
+
+.wprelay-section-1 .wprelay-tabs-section a {
+    align-items: center;
+    display: flex;
+    font-size: 16px;
+    gap: .75rem;
+    padding-bottom: .375rem !important;
+    padding-left: .5rem !important;
+    padding-right: .5rem !important;
+    padding-top: .375rem !important;
+    text-decoration-line: none !important;
+    width: auto
+}
+
+.wprelay-section-1 .wprelay-tabs-section a span {
+    font-size: 16px;
+    text-decoration-line: none
+}
+
+.wprelay-section-1 .wprelay-tabs-section a:active {
+    border-radius: .5rem;
+    text-decoration-line: none;
+    --tw-shadow: 0 4px 6px -1px rgba(0, 0, 0, .1), 0 2px 4px -2px rgba(0, 0, 0, .1);
+    --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)
+}
+
+.wprelay-section-1 .wprelay-tabs-section a:focus {
+    text-decoration-line: none
+}
+
+.wprelay-section-1 .wprelay-tabs-section a i {
+    border-radius: .375rem;
+    --tw-bg-opacity: 1;
+    background-color: rgb(241 245 249/var(--tw-bg-opacity));
+    padding: .25rem
+}
+
+.wprelay-settings-tabs-section {
+    margin: 0 !important;
+    padding: 0 !important
+}
+
+.wprelay-settings-tabs {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: start;
+    list-style: none;
+    margin: 0 !important;
+    padding: 10px !important
+}
+
+.wprelay-link-section, .wprelay-personal-info-section, .wprelay-shipping-info-section, .wprelay-social-links-section {
+    border-radius: 5px;
+    margin: 2rem 0;
+    padding: 1rem
+}
+
+.wprelay-name-section {
+    display: flex;
+    flex-direction: row
+}
+
+.wprelay-email-section, .wprelay-first-name, .wprelay-last-name, .wprelay-phone-section {
+    display: flex;
+    flex-direction: column
+}
+
+.wprelay-save-button {
+    display: flex;
+    justify-content: end
+}
+
+.wprelay-section-commissions .commissions-header {
+    align-items: center;
+    border-radius: .5rem;
+    border-width: 1px;
+    display: flex;
+    gap: 1.5rem;
+    justify-content: space-between;
+    --tw-bg-opacity: 1;
+    background-color: rgb(255 255 255/var(--tw-bg-opacity));
+    padding: 1.25rem;
+    --tw-shadow: 0 4px 6px -1px rgba(0, 0, 0, .1), 0 2px 4px -2px rgba(0, 0, 0, .1);
+    --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow 0 0 #0000), var(--tw-shadow)
+}
+
+.wprelay-section-commissions .commissions-header .commissions-main-header {
+    align-items: center;
+    display: flex;
+    gap: 1rem
+}
+
+.wprelay-section-commissions .commissions-header .commissions-main-header h3 {
+    font-size: 16px !important;
+    font-weight: 700;
+    margin: 0 !important
+}
+
+.wprelay-section-commissions .commissions-header .commissions-main-header i {
+    border-radius: 1.5rem;
+    border-width: 1px;
+    --tw-bg-opacity: 1;
+    background-color: rgb(241 245 249/var(--tw-bg-opacity));
+    padding: .75rem
+}
+
+.wprelay-section-commissions .commissions-header .commissions-search button {
+    border-radius: .25rem;
+    font-weight: 700;
+    padding-bottom: .5rem;
+    padding-left: .75rem;
+    padding-right: .75rem;
+    padding-top: .5rem
+}
+
+.wprelay-section-commissions .commissions-header .commissions-search input {
+    border-radius: .375rem;
+    padding-bottom: .5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: .5rem;
+    width: 60%
+}
+
+.wprelay-section-commissions .commissions-table {
+    font-size: .875rem;
+    line-height: 1.25rem;
+    margin-top: 1.25rem !important;
+    text-align: left;
+    width: 100%;
+    --tw-text-opacity: 1;
+    color: rgb(107 114 128/var(--tw-text-opacity))
+}
+
+.wprelay-section-commissions .commissions-table:where([dir=rtl],[dir=rtl] *) {
+    text-align: right
+}
+
+@media (prefers-color-scheme: dark) {
+    .wprelay-section-commissions .commissions-table {
+        --tw-text-opacity: 1;
+        color: rgb(156 163 175/var(--tw-text-opacity))
+    }
+}
+
+.wprelay-section-commissions .commissions-table thead {
+    font-size: .75rem;
+    line-height: 1rem;
+    text-transform: uppercase;
+    --tw-text-opacity: 1;
+    color: rgb(0 0 0/var(--tw-text-opacity))
+}
+
+.wprelay-section-commissions .commissions-table thead tr {
+    width: 100%
+}
+
+.wprelay-section-commissions .commissions-table thead tr th {
+    padding-bottom: 1rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-top: 1rem;
+    width: 25%
+}
+
+.wprelay-section-commissions .commissions-table tbody {
+    --tw-shadow: 0 10px 15px -3px rgba(0, 0, 0, .1), 0 4px 6px -4px rgba(0, 0, 0, .1);
+    --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)
+}
+
+.wprelay-section-commissions .commissions-table tbody div {
+    border-bottom-width: 1px
+}
+
+.wprelay-section-commissions .commissions-table tbody tr {
+    border-bottom-width: 1px;
+    border-style: solid;
+    width: 100%;
+    --tw-border-opacity: 1;
+    border-color: rgb(0 0 0/var(--tw-border-opacity))
+}
+
+.wprelay-section-commissions .commissions-table tbody tr td {
+    padding-bottom: 1.75rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-top: 1.75rem;
+    width: 25%;
+    --tw-text-opacity: 1;
+    color: rgb(0 0 0/var(--tw-text-opacity))
+}
+
+.wprelay-section-commissions .commissions-table tbody tr .customer-name, .wprelay-section-commissions .commissions-table tbody tr td {
+    font-size: .875rem;
+    line-height: 1.25rem
+}
+
+.wprelay-section-commissions .commissions-table tbody tr .customer-name {
+    font-weight: 600
+}
+
+.wprelay-section-commissions .pagination {
+    display: flex;
+    flex-direction: row;
+    gap: .5rem;
+    justify-content: flex-end;
+    list-style-type: none
+}
+
+.wprelay-section-commissions .wprelay-no-commissions {
+    align-items: center;
+    border-radius: .5rem;
+    border-width: 1px;
+    margin-top: 1.25rem !important;
+    --tw-bg-opacity: 1;
+    background-color: rgb(255 255 255/var(--tw-bg-opacity));
+    padding: 1rem;
+    --tw-shadow: 0 4px 6px -1px rgba(0, 0, 0, .1), 0 2px 4px -2px rgba(0, 0, 0, .1);
+    --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)
+}
+
+.wprelay-section-commissions .wprelay-no-commissions h5 {
+    margin: 0 !important
+}
+
+.wprelay-section-commissions .wprelay-no-commissions p {
+    font-size: 16px !important
+}
+
+.wprelay-section-orders {
+    border-width: 4px;
+    overflow-x: auto;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+    position: relative
+}
+
+:is(.wprelay-section-orders,) .sales-header {
+    display: flex
+}
+
+:is(.wprelay-section-orders,) .sales-header {
+    align-items: center
+}
+
+:is(.wprelay-section-orders,) .sales-header {
+    justify-content: space-between
+}
+
+:is(.wprelay-section-orders,) .sales-header {
+    gap: 1.5rem
+}
+
+:is(.wprelay-section-orders,) .sales-header {
+    border-radius: .5rem
+}
+
+:is(.wprelay-section-orders,) .sales-header {
+    border-width: 1px
+}
+
+:is(.wprelay-section-orders,) .sales-header {
+    --tw-bg-opacity: 1;
+    background-color: rgb(255 255 255/var(--tw-bg-opacity))
+}
+
+:is(.wprelay-section-orders,) .sales-header {
+    padding: 1.25rem
+}
+
+:is(.wprelay-section-orders,) .sales-header {
+    --tw-shadow: 0 4px 6px -1px rgba(0, 0, 0, .1), 0 2px 4px -2px rgba(0, 0, 0, .1);
+    --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)
+}
+
+:is(.wprelay-section-orders,) .sales-header .sales-main-header {
+    display: flex
+}
+
+:is(.wprelay-section-orders,) .sales-header .sales-main-header {
+    align-items: center
+}
+
+:is(.wprelay-section-orders,) .sales-header .sales-main-header {
+    gap: 1rem
+}
+
+:is(.wprelay-section-orders,) .sales-header .sales-main-header h3 {
+    margin: 0 !important
+}
+
+:is(.wprelay-section-orders,) .sales-header .sales-main-header h3 {
+    font-size: 16px !important
+}
+
+:is(.wprelay-section-orders,) .sales-header .sales-main-header h3 {
+    font-weight: 700
+}
+
+:is(.wprelay-section-orders,) .sales-header .sales-main-header i {
+    border-radius: 1.5rem
+}
+
+:is(.wprelay-section-orders,) .sales-header .sales-main-header i {
+    border-width: 1px
+}
+
+:is(.wprelay-section-orders,) .sales-header .sales-main-header i {
+    --tw-bg-opacity: 1;
+    background-color: rgb(241 245 249/var(--tw-bg-opacity))
+}
+
+:is(.wprelay-section-orders,) .sales-header .sales-main-header i {
+    padding: .75rem
+}
+
+:is(.wprelay-section-orders,) .sales-header .sales-search button {
+    border-radius: .25rem
+}
+
+:is(.wprelay-section-orders,) .sales-header .sales-search button {
+    padding-bottom: .5rem;
+    padding-top: .5rem
+}
+
+:is(.wprelay-section-orders,) .sales-header .sales-search button {
+    padding-left: .75rem;
+    padding-right: .75rem
+}
+
+:is(.wprelay-section-orders,) .sales-header .sales-search button {
+    font-weight: 700
+}
+
+:is(.wprelay-section-orders,) .sales-header .sales-search input {
+    width: 60%
+}
+
+:is(.wprelay-section-orders,) .sales-header .sales-search input {
+    border-radius: .375rem
+}
+
+:is(.wprelay-section-orders,) .sales-header .sales-search input {
+    padding-left: 1rem;
+    padding-right: 1rem
+}
+
+:is(.wprelay-section-orders,) .sales-header .sales-search input {
+    padding-bottom: .5rem;
+    padding-top: .5rem
+}
+
+:is(.wprelay-section-orders,) .sales-table {
+    margin-top: 1.25rem !important
+}
+
+:is(.wprelay-section-orders,) .sales-table {
+    width: 100%
+}
+
+:is(.wprelay-section-orders,) .sales-table {
+    text-align: left
+}
+
+:is(.wprelay-section-orders,) .sales-table {
+    font-size: .875rem;
+    line-height: 1.25rem
+}
+
+:is(.wprelay-section-orders,) .sales-table {
+    --tw-text-opacity: 1;
+    color: rgb(107 114 128/var(--tw-text-opacity))
+}
+
+:is(.wprelay-section-orders,) .sales-table:where([dir=rtl],[dir=rtl] *) {
+    text-align: right
+}
+
+@media (prefers-color-scheme: dark) {
+    :is(.wprelay-section-orders,) .sales-table {
+        --tw-text-opacity: 1;
+        color: rgb(156 163 175/var(--tw-text-opacity))
+    }
+}
+
+:is(.wprelay-section-orders,) .sales-table thead {
+    font-size: .75rem;
+    line-height: 1rem
+}
+
+:is(.wprelay-section-orders,) .sales-table thead {
+    text-transform: uppercase
+}
+
+:is(.wprelay-section-orders,) .sales-table thead {
+    --tw-text-opacity: 1;
+    color: rgb(0 0 0/var(--tw-text-opacity))
+}
+
+:is(.wprelay-section-orders,) .sales-table thead tr {
+    width: 100%
+}
+
+:is(.wprelay-section-orders,) .sales-table thead tr th {
+    width: 25%
+}
+
+:is(.wprelay-section-orders,) .sales-table thead tr th {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem
+}
+
+:is(.wprelay-section-orders,) .sales-table thead tr th {
+    padding-bottom: 1rem;
+    padding-top: 1rem
+}
+
+:is(.wprelay-section-orders,) .sales-table tbody {
+    --tw-shadow: 0 10px 15px -3px rgba(0, 0, 0, .1), 0 4px 6px -4px rgba(0, 0, 0, .1);
+    --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)
+}
+
+:is(.wprelay-section-orders,) .sales-table tbody div {
+    border-bottom-width: 1px
+}
+
+:is(.wprelay-section-orders,) .sales-table tbody tr {
+    width: 100%
+}
+
+:is(.wprelay-section-orders,) .sales-table tbody tr {
+    border-bottom-width: 1px
+}
+
+:is(.wprelay-section-orders,) .sales-table tbody tr {
+    border-style: solid
+}
+
+:is(.wprelay-section-orders,) .sales-table tbody tr {
+    --tw-border-opacity: 1;
+    border-color: rgb(0 0 0/var(--tw-border-opacity))
+}
+
+:is(.wprelay-section-orders,) .sales-table tbody tr td {
+    width: 25%
+}
+
+:is(.wprelay-section-orders,) .sales-table tbody tr td {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem
+}
+
+:is(.wprelay-section-orders,) .sales-table tbody tr td {
+    padding-bottom: 1.75rem;
+    padding-top: 1.75rem
+}
+
+:is(.wprelay-section-orders,) .sales-table tbody tr td {
+    font-size: .875rem;
+    line-height: 1.25rem
+}
+
+:is(.wprelay-section-orders,) .sales-table tbody tr td {
+    --tw-text-opacity: 1;
+    color: rgb(0 0 0/var(--tw-text-opacity))
+}
+
+:is(.wprelay-section-orders,) .sales-table tbody tr .customer-name {
+    font-size: .875rem;
+    line-height: 1.25rem
+}
+
+:is(.wprelay-section-orders,) .sales-table tbody tr .customer-name {
+    font-weight: 600
+}
+
+:is(.wprelay-section-orders,) .pagination {
+    display: flex
+}
+
+:is(.wprelay-section-orders,) .pagination {
+    list-style-type: none
+}
+
+:is(.wprelay-section-orders,) .pagination {
+    flex-direction: row
+}
+
+:is(.wprelay-section-orders,) .pagination {
+    justify-content: flex-end
+}
+
+:is(.wprelay-section-orders,) .pagination {
+    gap: .5rem
+}
+
+:is(.wprelay-section-orders,) .wprelay-no-sales {
+    margin-top: 1.25rem !important
+}
+
+:is(.wprelay-section-orders,) .wprelay-no-sales {
+    align-items: center
+}
+
+:is(.wprelay-section-orders,) .wprelay-no-sales {
+    border-radius: .5rem
+}
+
+:is(.wprelay-section-orders,) .wprelay-no-sales {
+    border-width: 1px
+}
+
+:is(.wprelay-section-orders,) .wprelay-no-sales {
+    --tw-bg-opacity: 1;
+    background-color: rgb(255 255 255/var(--tw-bg-opacity))
+}
+
+:is(.wprelay-section-orders,) .wprelay-no-sales {
+    padding: 1rem
+}
+
+:is(.wprelay-section-orders,) .wprelay-no-sales {
+    --tw-shadow: 0 4px 6px -1px rgba(0, 0, 0, .1), 0 2px 4px -2px rgba(0, 0, 0, .1);
+    --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)
+}
+
+:is(.wprelay-section-orders,) .wprelay-no-sales h5 {
+    margin: 0 !important
+}
+
+:is(.wprelay-section-orders,) .wprelay-no-sales p {
+    font-size: 16px !important
+}
+
+.affiliate-overview {
+    display: flex;
+    flex-direction: row;
+    gap: .75rem;
+    justify-content: space-between;
+    margin-bottom: 1.25rem;
+    margin-top: 1.25rem;
+    width: 100%
+}
+
+.affiliate-overview h4 {
+    font-weight: 700
+}
+
+.affiliate-overview h3, .affiliate-overview h4 {
+    margin: 0 !important
+}
+
+.affiliate-overview h3 {
+    font-size: 16px !important;
+    font-weight: 700
+}
+
+.affiliate-overview p {
+    font-size: .875rem;
+    font-weight: 500;
+    line-height: 1.25rem;
+    margin: 0
+}
+
+.affiliate-overview .overview-card {
+    gap: 1.25rem;
+    width: 33.333333%
+}
+
+.affiliate-coupon, .affiliate-overview .overview-card {
+    border-radius: .5rem;
+    border-width: 1px;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    --tw-shadow: 0 4px 6px -1px rgba(0, 0, 0, .1), 0 2px 4px -2px rgba(0, 0, 0, .1);
+    --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)
+}
+
+.affiliate-coupon {
+    gap: 1.5rem
+}
+
+.affiliate-coupon h4 {
+    font-weight: 700
+}
+
+.affiliate-coupon h3, .affiliate-coupon h4 {
+    margin: 0 !important
+}
+
+.affiliate-coupon h3 {
+    font-size: 16px !important;
+    font-weight: 700
+}
+
+.affiliate-coupon .coupon-header {
+    align-items: center;
+    display: flex;
+    gap: 1rem
+}
+
+.affiliate-coupon .coupon-header i {
+    border-radius: 1.5rem;
+    border-width: 1px;
+    --tw-bg-opacity: 1;
+    background-color: rgb(241 245 249/var(--tw-bg-opacity));
+    padding: .5rem
+}
+
+.affiliate-coupon .coupon-header .coupon-icon {
+    border-radius: .25rem;
+    border-width: 1px;
+    fill: #eef2ff
+}
+
+.affiliate-coupon .coupon-codes {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem
+}
+
+.affiliate-coupon .coupon-codes .wprelay-coupon {
+    align-items: center;
+    border-color: hsl(var(--primary));
+    border-radius: .5rem;
+    border-style: dashed;
+    border-width: 2px;
+    display: flex;
+    font-size: 16px;
+    gap: .25rem;
+    justify-content: space-between;
+    padding-bottom: .25rem;
+    padding-left: .875rem;
+    padding-right: .875rem;
+    padding-top: .25rem
+}
+
+.affiliate-coupon .coupon-codes .wprelay-coupon i {
+    cursor: pointer
+}
+
+.wprelay-affiliate-program {
+    border-radius: .5rem;
+    border-width: 1px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1.5rem;
+    --tw-shadow: 0 4px 6px -1px rgba(0, 0, 0, .1), 0 2px 4px -2px rgba(0, 0, 0, .1);
+    --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)
+}
+
+.wprelay-affiliate-program h4 {
+    font-weight: 700;
+    margin: 0 !important
+}
+
+.wprelay-affiliate-program h3 {
+    font-size: 16px !important;
+    font-weight: 700;
+    margin: 0 !important
+}
+
+.wprelay-section-commissions, .wprelay-section-orders, .wprelay-section-payouts {
+    border-width: 4px;
+    overflow-x: auto;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+    position: relative
+}
+
+.wprelay-section-commissions .payouts-header, .wprelay-section-orders .payouts-header, .wprelay-section-payouts .payouts-header {
+    align-items: center;
+    border-radius: .5rem;
+    border-width: 1px;
+    display: flex;
+    gap: 1.5rem;
+    justify-content: space-between;
+    --tw-bg-opacity: 1;
+    background-color: rgb(255 255 255/var(--tw-bg-opacity));
+    padding: 1.25rem;
+    --tw-shadow: 0 4px 6px -1px rgba(0, 0, 0, .1), 0 2px 4px -2px rgba(0, 0, 0, .1);
+    --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)
+}
+
+.wprelay-section-commissions .payouts-header .payouts-main-header, .wprelay-section-orders .payouts-header .payouts-main-header, .wprelay-section-payouts .payouts-header .payouts-main-header {
+    align-items: center;
+    display: flex;
+    gap: 1rem
+}
+
+.wprelay-section-commissions .payouts-header .payouts-main-header h3, .wprelay-section-orders .payouts-header .payouts-main-header h3, .wprelay-section-payouts .payouts-header .payouts-main-header h3 {
+    font-size: 16px !important;
+    font-weight: 700;
+    margin: 0 !important
+}
+
+.wprelay-section-commissions .payouts-header .payouts-main-header i, .wprelay-section-orders .payouts-header .payouts-main-header i, .wprelay-section-payouts .payouts-header .payouts-main-header i {
+    border-radius: 1.5rem;
+    border-width: 1px;
+    --tw-bg-opacity: 1;
+    background-color: rgb(241 245 249/var(--tw-bg-opacity));
+    padding: .75rem
+}
+
+.wprelay-section-commissions .payouts-header .payouts-search button, .wprelay-section-orders .payouts-header .payouts-search button, .wprelay-section-payouts .payouts-header .payouts-search button {
+    border-radius: .25rem;
+    font-weight: 700;
+    padding-bottom: .5rem;
+    padding-left: .75rem;
+    padding-right: .75rem;
+    padding-top: .5rem
+}
+
+.wprelay-section-commissions .payouts-header .payouts-search input, .wprelay-section-orders .payouts-header .payouts-search input, .wprelay-section-payouts .payouts-header .payouts-search input {
+    border-radius: .375rem;
+    padding-bottom: .5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: .5rem;
+    width: 60%
+}
+
+.wprelay-section-commissions .payouts-table, .wprelay-section-orders .payouts-table, .wprelay-section-payouts .payouts-table {
+    font-size: .875rem;
+    line-height: 1.25rem;
+    margin-top: 1.25rem !important;
+    text-align: left;
+    width: 100%;
+    --tw-text-opacity: 1;
+    color: rgb(107 114 128/var(--tw-text-opacity))
+}
+
+.wprelay-section-commissions .payouts-table:where([dir=rtl],[dir=rtl] *), .wprelay-section-orders .payouts-table:where([dir=rtl],[dir=rtl] *), .wprelay-section-payouts .payouts-table:where([dir=rtl],[dir=rtl] *) {
+    text-align: right
+}
+
+@media (prefers-color-scheme: dark) {
+    .wprelay-section-commissions .payouts-table, .wprelay-section-orders .payouts-table, .wprelay-section-payouts .payouts-table {
+        --tw-text-opacity: 1;
+        color: rgb(156 163 175/var(--tw-text-opacity))
+    }
+}
+
+.wprelay-section-commissions .payouts-table thead, .wprelay-section-orders .payouts-table thead, .wprelay-section-payouts .payouts-table thead {
+    font-size: .75rem;
+    line-height: 1rem;
+    text-transform: uppercase;
+    --tw-text-opacity: 1;
+    color: rgb(0 0 0/var(--tw-text-opacity))
+}
+
+.wprelay-section-commissions .payouts-table thead tr, .wprelay-section-orders .payouts-table thead tr, .wprelay-section-payouts .payouts-table thead tr {
+    width: 100%
+}
+
+.wprelay-section-commissions .payouts-table thead tr th, .wprelay-section-orders .payouts-table thead tr th, .wprelay-section-payouts .payouts-table thead tr th {
+    padding-bottom: 1rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-top: 1rem;
+    width: 25%
+}
+
+.wprelay-section-commissions .payouts-table tbody, .wprelay-section-orders .payouts-table tbody, .wprelay-section-payouts .payouts-table tbody {
+    --tw-shadow: 0 10px 15px -3px rgba(0, 0, 0, .1), 0 4px 6px -4px rgba(0, 0, 0, .1);
+    --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)
+}
+
+.wprelay-section-commissions .payouts-table tbody div, .wprelay-section-orders .payouts-table tbody div, .wprelay-section-payouts .payouts-table tbody div {
+    border-bottom-width: 1px
+}
+
+.wprelay-section-commissions .payouts-table tbody tr, .wprelay-section-orders .payouts-table tbody tr, .wprelay-section-payouts .payouts-table tbody tr {
+    border-bottom-width: 1px;
+    border-style: solid;
+    width: 100%;
+    --tw-border-opacity: 1;
+    border-color: rgb(0 0 0/var(--tw-border-opacity))
+}
+
+.wprelay-section-commissions .payouts-table tbody tr td, .wprelay-section-orders .payouts-table tbody tr td, .wprelay-section-payouts .payouts-table tbody tr td {
+    font-size: .875rem;
+    line-height: 1.25rem;
+    padding-bottom: 1.75rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-top: 1.75rem;
+    width: 25%;
+    --tw-text-opacity: 1;
+    color: rgb(0 0 0/var(--tw-text-opacity))
+}
+
+.wprelay-section-commissions .payouts-table tbody tr .customer-name, .wprelay-section-orders .payouts-table tbody tr .customer-name, .wprelay-section-payouts .payouts-table tbody tr .customer-name {
+    font-size: .875rem;
+    font-weight: 600;
+    line-height: 1.25rem
+}
+
+.wprelay-section-commissions .pagination, .wprelay-section-orders .pagination, .wprelay-section-payouts .pagination {
+    display: flex;
+    flex-direction: row;
+    gap: .5rem;
+    justify-content: flex-end;
+    list-style-type: none
+}
+
+.wprelay-section-commissions .wprelay-no-payouts, .wprelay-section-orders .wprelay-no-payouts, .wprelay-section-payouts .wprelay-no-payouts {
+    align-items: center;
+    border-radius: .5rem;
+    border-width: 1px;
+    margin-top: 1.25rem !important;
+    --tw-bg-opacity: 1;
+    background-color: rgb(255 255 255/var(--tw-bg-opacity));
+    padding: 1rem;
+    --tw-shadow: 0 4px 6px -1px rgba(0, 0, 0, .1), 0 2px 4px -2px rgba(0, 0, 0, .1);
+    --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)
+}
+
+.wprelay-section-commissions .wprelay-no-payouts h5, .wprelay-section-orders .wprelay-no-payouts h5, .wprelay-section-payouts .wprelay-no-payouts h5 {
+    margin: 0 !important
+}
+
+.wprelay-section-commissions .wprelay-no-payouts p, .wprelay-section-orders .wprelay-no-payouts p, .wprelay-section-payouts .wprelay-no-payouts p {
+    font-size: 16px !important
+}
+
+.pagination {
+    display: flex;
+    justify-content: flex-end
+}
+
+.pagination li {
+    list-style-type: none;
+    padding-bottom: .5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: .5rem
+}
+
+.pagination li a {
+    padding: 0 !important;
+    text-decoration-line: none
+}
+
+.pagination li a i {
+    height: .625rem;
+    width: .625rem
+}
+
+.pagination li.active {
+    --tw-bg-opacity: 1;
+    background-color: rgb(0 0 0/var(--tw-bg-opacity))
+}
+
+.pagination li.active a {
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255/var(--tw-text-opacity))
+}
+
+.pagination li:hover {
+    --tw-bg-opacity: 1;
+    background-color: rgb(209 213 219/var(--tw-bg-opacity))
+}
+
+.pagination li:hover a {
+    --tw-text-opacity: 1;
+    color: rgb(0 0 0/var(--tw-text-opacity))
+}
+
+.wprelay-main-settings #wprelay-settings {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem
+}
+
+.wprelay-main-settings #wprelay-settings .wprelay-mandatory-field {
+    color: red
+}
+
+.wprelay-main-settings #wprelay-settings #wprelay-detail-form .wprelay-row-wrap, .wprelay-main-settings #wprelay-settings h6 {
+    margin: 0 !important
+}
+
+.wprelay-main-settings #wprelay-settings #wprelay-detail-form .wprelay-row-wrap {
+    display: flex;
+    gap: 3rem;
+    justify-content: space-between;
+    width: 100%
+}
+
+.wprelay-main-settings #wprelay-settings #wprelay-detail-form .wprelay-row-wrap div {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    margin: 0 !important;
+    width: 50%
+}
+
+.wprelay-main-settings #wprelay-settings #wprelay-detail-form .wprelay-row-wrap div p {
+    font-size: .875rem !important;
+    font-weight: 500;
+    height: 1rem;
+    line-height: 1.25rem !important;
+    margin: 0 !important;
+    overflow: hidden;
+    padding: 0 !important
+}
+
+.wprelay-main-settings #wprelay-settings #wprelay-detail-form .wprelay-row-wrap div label {
+    font-size: 15px;
+    font-weight: 600
+}
+
+.wprelay-main-settings #wprelay-settings #wprelay-detail-form .wprelay-row-wrap div input {
+    border-radius: .375rem;
+    border-width: 1px;
+    font-size: 15px;
+    padding-bottom: .75rem;
+    padding-left: .75rem;
+    padding-right: .75rem;
+    padding-top: .75rem
+}
+
+.wprelay-main-settings #wprelay-settings #wprelay-detail-form .wprelay-single-row {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem
+}
+
+.wprelay-main-settings #wprelay-settings #wprelay-detail-form .wprelay-single-row label {
+    font-size: 15px;
+    font-weight: 600
+}
+
+.wprelay-main-settings #wprelay-settings #wprelay-detail-form .wprelay-single-row input {
+    border-radius: .375rem;
+    border-width: 1px;
+    font-size: 15px;
+    padding-bottom: .75rem;
+    padding-left: .75rem;
+    padding-right: .75rem;
+    padding-top: .75rem
+}
+
+.wprelay-main-settings #wprelay-settings #wprelay-detail-form .wprelay-single-row p {
+    font-size: .875rem !important;
+    font-weight: 500;
+    height: 1rem;
+    line-height: 1.25rem !important;
+    margin: 0 !important;
+    overflow: hidden;
+    padding: 0 !important
+}
+
+.wprelay-main-settings #wprelay-settings #wprelay-detail-form p {
+    color: red
+}
+
+.wprelay-main-settings #wprelay-settings #wprelay-detail-form .wprelay-settings-tabcontents {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    margin-bottom: 2.5rem;
+    margin-top: 2.5rem;
+    padding: 0
+}
+
+.wprelay-main-settings #wprelay-settings #wprelay-detail-form .wprelay-settings-tabcontents .wprelay-link-sections {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1.5rem;
+    --tw-shadow: 0 4px 6px -1px rgba(0, 0, 0, .1), 0 2px 4px -2px rgba(0, 0, 0, .1) !important;
+    --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color) !important;
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow) !important
+}
+
+.wprelay-main-settings #wprelay-settings #wprelay-detail-form .wprelay-settings-tabcontents .wprelay-link-sections .setting-section-header {
+    align-items: center;
+    display: flex;
+    gap: 1rem
+}
+
+.wprelay-main-settings #wprelay-settings #wprelay-detail-form .wprelay-settings-tabcontents .wprelay-link-sections .setting-section-header span {
+    font-size: 16px !important;
+    font-weight: 700
+}
+
+.wprelay-main-settings #wprelay-settings #wprelay-detail-form .wprelay-settings-tabcontents .wprelay-link-sections .setting-section-header i {
+    border-radius: 1.5rem;
+    border-width: 1px;
+    --tw-bg-opacity: 1;
+    background-color: rgb(241 245 249/var(--tw-bg-opacity));
+    padding: .75rem
+}
+
+.wprelay-main-settings #wprelay-settings #wprelay-detail-form .wprelay-settings-tabcontents .wprelay-link-sections .settings-wprelay-url {
+    display: flex;
+    width: 100%
+}
+
+.wprelay-main-settings #wprelay-settings #wprelay-detail-form .wprelay-settings-tabcontents .wprelay-link-sections .settings-wprelay-url .url {
+    border-end-end-radius: 0;
+    border-end-start-radius: .375rem;
+    border-start-end-radius: 0;
+    border-start-start-radius: .375rem;
+    border-style: solid;
+    border-width: 1px;
+    width: 70% !important;
+    --tw-border-opacity: 1;
+    border-color: rgb(0 0 0/var(--tw-border-opacity));
+    font-size: 15px;
+    padding: .5rem
+}
+
+.wprelay-main-settings #wprelay-settings #wprelay-detail-form .wprelay-settings-tabcontents .wprelay-link-sections .settings-wprelay-url input {
+    border-end-end-radius: .375rem;
+    border-end-start-radius: 0;
+    border-start-end-radius: .375rem;
+    border-start-start-radius: 0;
+    border-style: solid;
+    border-width: 1px;
+    width: 30% !important;
+    --tw-border-opacity: 1;
+    border-color: rgb(0 0 0/var(--tw-border-opacity));
+    font-size: 15px;
+    padding: .5rem
+}
+
+.wprelay-main-settings #wprelay-settings #wprelay-detail-form .wprelay-personal-info-section {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 0 !important;
+    padding: 1.5rem;
+    --tw-shadow: 0 4px 6px -1px rgba(0, 0, 0, .1), 0 2px 4px -2px rgba(0, 0, 0, .1) !important;
+    --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color) !important;
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow) !important
+}
+
+.wprelay-main-settings #wprelay-settings #wprelay-detail-form .wprelay-personal-info-section .personal-info-header, .wprelay-main-settings #wprelay-settings #wprelay-detail-form .wprelay-personal-info-section label {
+    margin: 0 !important
+}
+
+.wprelay-main-settings #wprelay-settings #wprelay-detail-form .wprelay-personal-info-section .personal-info-header {
+    align-items: center;
+    display: flex;
+    gap: 1rem
+}
+
+.wprelay-main-settings #wprelay-settings #wprelay-detail-form .wprelay-personal-info-section .personal-info-header span {
+    font-size: 16px !important;
+    font-weight: 700
+}
+
+.wprelay-main-settings #wprelay-settings #wprelay-detail-form .wprelay-personal-info-section .personal-info-header i {
+    border-radius: 1.5rem;
+    border-width: 1px;
+    --tw-bg-opacity: 1;
+    background-color: rgb(241 245 249/var(--tw-bg-opacity));
+    padding: .75rem
+}
+
+.wprelay-main-settings #wprelay-settings .wprelay-email-section, .wprelay-main-settings #wprelay-settings .wprelay-phone-section {
+    margin: 0 !important
+}
+
+.wprelay-main-settings #wprelay-settings .wprelay-email-section label, .wprelay-main-settings #wprelay-settings .wprelay-phone-section label {
+    font-size: 15px;
+    font-weight: 600
+}
+
+.wprelay-main-settings #wprelay-settings .wprelay-email-section input, .wprelay-main-settings #wprelay-settings .wprelay-phone-section input {
+    border-radius: .375rem;
+    border-width: 1px;
+    font-size: 15px;
+    padding-bottom: .75rem;
+    padding-left: .75rem;
+    padding-right: .75rem;
+    padding-top: .75rem
+}
+
+.wprelay-main-settings .wprelay-shipping-info-section {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 0 !important;
+    padding: 1.5rem !important;
+    --tw-shadow: 0 4px 6px -1px rgba(0, 0, 0, .1), 0 2px 4px -2px rgba(0, 0, 0, .1) !important;
+    --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color) !important;
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow) !important
+}
+
+.wprelay-main-settings .wprelay-shipping-info-section label {
+    font-size: 15px;
+    font-weight: 600;
+    margin: 0 !important
+}
+
+.wprelay-main-settings .wprelay-shipping-info-section input, .wprelay-main-settings .wprelay-shipping-info-section select {
+    border-radius: .375rem;
+    border-width: 1px;
+    font-size: 15px;
+    padding-bottom: .75rem;
+    padding-left: .75rem;
+    padding-right: .75rem;
+    padding-top: .75rem
+}
+
+.wprelay-main-settings .wprelay-shipping-info-section .shipping-info-header {
+    align-items: center;
+    display: flex;
+    gap: 1rem
+}
+
+.wprelay-main-settings .wprelay-shipping-info-section .shipping-info-header span {
+    font-size: 16px !important;
+    font-weight: 700
+}
+
+.wprelay-main-settings .wprelay-shipping-info-section .shipping-info-header i {
+    border-radius: 1.5rem;
+    border-width: 1px;
+    --tw-bg-opacity: 1;
+    background-color: rgb(241 245 249/var(--tw-bg-opacity));
+    padding: .75rem
+}
+
+.wprelay-main-settings .wprelay-social-links-section {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 0 !important;
+    padding: 1.5rem !important;
+    --tw-shadow: 0 4px 6px -1px rgba(0, 0, 0, .1), 0 2px 4px -2px rgba(0, 0, 0, .1) !important;
+    --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color) !important;
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow) !important
+}
+
+.wprelay-main-settings .wprelay-social-links-section label {
+    font-size: 15px;
+    font-weight: 600;
+    margin: 0 !important
+}
+
+.wprelay-main-settings .wprelay-social-links-section input {
+    border-radius: .375rem;
+    border-width: 1px;
+    font-size: 15px;
+    padding-bottom: .75rem;
+    padding-left: .75rem;
+    padding-right: .75rem;
+    padding-top: .75rem
+}
+
+.wprelay-main-settings .wprelay-social-links-section .social-links-header {
+    align-items: center;
+    display: flex;
+    gap: 1rem
+}
+
+.wprelay-main-settings .wprelay-social-links-section .social-links-header span {
+    font-size: 16px !important;
+    font-weight: 700
+}
+
+.wprelay-main-settings .wprelay-social-links-section .social-links-header i {
+    border-radius: 1.5rem;
+    border-width: 1px;
+    --tw-bg-opacity: 1;
+    background-color: rgb(241 245 249/var(--tw-bg-opacity));
+    padding: .75rem
+}
+
+.wprelay-main-settings .wprelay-save-button button {
+    align-items: center;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    width: 200px
+}
+
+.wprelay-main-settings .wprelay-loader {
+    animation: wprelayRotate 1s linear infinite;
+    border-radius: 100%;
+    height: 20px;
+    position: relative;
+    width: 20px
+}
+
+.wprelay-main-settings .wprelay-loader:before {
+    animation: wprelayPrixClipFix 3s linear infinite;
+    border: 5px solid #fff;
+    border-radius: 100%;
+    box-sizing: border-box;
+    content: "";
+    inset: 0;
+    position: absolute
+}
+
+@keyframes wprelayRotate {
+    to {
+        transform: rotate(1turn)
+    }
+}
+
+@keyframes wprelayPrixClipFix {
+    0% {
+        -webkit-clip-path: polygon(50% 50%, 0 0, 0 0, 0 0, 0 0, 0 0);
+        clip-path: polygon(50% 50%, 0 0, 0 0, 0 0, 0 0, 0 0)
+    }
+    25% {
+        -webkit-clip-path: polygon(50% 50%, 0 0, 100% 0, 100% 0, 100% 0, 100% 0);
+        clip-path: polygon(50% 50%, 0 0, 100% 0, 100% 0, 100% 0, 100% 0)
+    }
+    50% {
+        -webkit-clip-path: polygon(50% 50%, 0 0, 100% 0, 100% 100%, 100% 100%, 100% 100%);
+        clip-path: polygon(50% 50%, 0 0, 100% 0, 100% 100%, 100% 100%, 100% 100%)
+    }
+    75% {
+        -webkit-clip-path: polygon(50% 50%, 0 0, 100% 0, 100% 100%, 0 100%, 0 100%);
+        clip-path: polygon(50% 50%, 0 0, 100% 0, 100% 100%, 0 100%, 0 100%)
+    }
+    to {
+        -webkit-clip-path: polygon(50% 50%, 0 0, 100% 0, 100% 100%, 0 100%, 0 0);
+        clip-path: polygon(50% 50%, 0 0, 100% 0, 100% 100%, 0 100%, 0 0)
+    }
+}
+
+.aff-section {
+    --tw-border-spacing-x: 0px;
+    --tw-border-spacing-y: 0px;
+    border-right-width: 2px;
+    border-spacing: var(--tw-border-spacing-x) var(--tw-border-spacing-y);
+    --tw-border-opacity: 1;
+    border-color: rgb(255 251 235/var(--tw-border-opacity))
+}

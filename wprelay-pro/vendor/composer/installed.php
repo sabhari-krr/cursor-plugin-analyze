@@ -1,0 +1,52 @@
+<?php return array(
+    'root' => array(
+        'name' => 'relaywp/relaywp',
+        'pretty_version' => 'dev-main',
+        'version' => 'dev-main',
+        'reference' => '1c4d34805ee805b5287b7f5ba872125b2d1753a7',
+        'type' => 'library',
+        'install_path' => __DIR__ . '/../../',
+        'aliases' => array(),
+        'dev' => true,
+    ),
+    'versions' => array(
+        'cartrabbit/request-helper' => array(
+            'pretty_version' => 'dev-main',
+            'version' => 'dev-main',
+            'reference' => '3d97e4eea32cb2c547180c8a301791ac6ff22820',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../cartrabbit/request-helper',
+            'aliases' => array(
+                0 => '9999999-dev',
+            ),
+            'dev_requirement' => false,
+        ),
+        'relaywp/relaywp' => array(
+            'pretty_version' => 'dev-main',
+            'version' => 'dev-main',
+            'reference' => '1c4d34805ee805b5287b7f5ba872125b2d1753a7',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../../',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+        'vlucas/valitron' => array(
+            'pretty_version' => 'v1.4.11',
+            'version' => '1.4.11.0',
+            'reference' => 'fadce39f5f235755bb9794b2573af2d5bfcba85f',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../vlucas/valitron',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+        'yahnis-elsts/plugin-update-checker' => array(
+            'pretty_version' => 'v5.5',
+            'version' => '5.5.0.0',
+            'reference' => '845d65da93bcff31649ede00d9d73b1beadbb7f0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../yahnis-elsts/plugin-update-checker',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+    ),
+);

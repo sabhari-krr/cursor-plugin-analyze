@@ -1,0 +1,680 @@
+# Copyright (C) 2025 WPLoyalty
+# This file is distributed under the GPLv2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: WPLoyalty: Point Email Reminder 0.0.1\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wployalty-point-email-reminder\n"
+"Last-Translator: emaileditorplus <support@sparkeditor.com>\n"
+"Language-Team: emaileditorplus <support@sparkeditor.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2025-08-21T15:02:51+05:30\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.11.0\n"
+"X-Domain: wployalty-point-email-reminder\n"
+
+#. Plugin Name of the plugin
+#: wployalty-point-email-reminder.php
+#: App/Controllers/Common.php:25
+#: App/Controllers/Common.php:26
+msgid "WPLoyalty: Point Email Reminder"
+msgstr ""
+
+#. Plugin URI of the plugin
+#. Author URI of the plugin
+#: wployalty-point-email-reminder.php
+msgid "https://wployalty.net/"
+msgstr ""
+
+#. Description of the plugin
+#: wployalty-point-email-reminder.php
+msgid "This is the addon to send email reminder to admin and users regarding loyalty data."
+msgstr ""
+
+#. Author of the plugin
+#: wployalty-point-email-reminder.php
+msgid "WPLoyalty"
+msgstr ""
+
+#: App/Controllers/AdminController.php:72
+msgid "Your Points Update - %d Points!"
+msgstr ""
+
+#: App/Controllers/AdminPageController.php:13
+msgid "WP Loyalty Users"
+msgstr ""
+
+#: App/Controllers/AdminPageController.php:14
+msgid "WPLoyalty Point Email Remainder"
+msgstr ""
+
+#: App/Controllers/AdminPageController.php:41
+msgid "You do not have permission to access this page."
+msgstr ""
+
+#: App/Controllers/AdminPageController.php:63
+msgid "You do not have permission to perform this action."
+msgstr ""
+
+#: App/Controllers/AdminPageController.php:67
+msgid "Security check failed."
+msgstr ""
+
+#: App/Controllers/ReminderRuleController.php:17
+#: App/Controllers/ReminderRuleController.php:111
+#: App/Controllers/ReminderRuleController.php:160
+#: App/Controllers/ReminderRuleController.php:178
+#: App/Controllers/ReminderRuleController.php:235
+msgid "Security check failed"
+msgstr ""
+
+#: App/Controllers/ReminderRuleController.php:58
+msgid "Basic validation failed"
+msgstr ""
+
+#: App/Controllers/ReminderRuleController.php:70
+msgid "Schedule validation failed"
+msgstr ""
+
+#: App/Controllers/ReminderRuleController.php:76
+msgid "Action Scheduler plugin is required for scheduling"
+msgstr ""
+
+#: App/Controllers/ReminderRuleController.php:89
+msgid "This schedule action already exists for this configuration"
+msgstr ""
+
+#: App/Controllers/ReminderRuleController.php:102
+msgid "Rule created successfully"
+msgstr ""
+
+#: App/Controllers/ReminderRuleController.php:104
+msgid "Failed to create rule"
+msgstr ""
+
+#: App/Controllers/ReminderRuleController.php:143
+msgid "Invalid fields"
+msgstr ""
+
+#: App/Controllers/ReminderRuleController.php:151
+msgid "Rule updated successfully"
+msgstr ""
+
+#: App/Controllers/ReminderRuleController.php:153
+msgid "Failed to update rule"
+msgstr ""
+
+#: App/Controllers/ReminderRuleController.php:168
+msgid "Rule deleted successfully"
+msgstr ""
+
+#: App/Controllers/ReminderRuleController.php:170
+msgid "Failed to delete rule"
+msgstr ""
+
+#: App/Controllers/ReminderRuleController.php:243
+msgid "No rules selected for deletion"
+msgstr ""
+
+#: App/Controllers/ReminderRuleController.php:257
+msgid "Invalid rule IDs provided"
+msgstr ""
+
+#: App/Controllers/ReminderRuleController.php:279
+msgid "%s rule deleted successfully."
+msgid_plural "%s rules deleted successfully."
+msgstr[0] ""
+msgstr[1] ""
+
+#: App/Controllers/ReminderRuleController.php:291
+msgid "%s rule could not be deleted."
+msgid_plural "%s rules could not be deleted."
+msgstr[0] ""
+msgstr[1] ""
+
+#: App/Controllers/ReminderRuleController.php:309
+msgid "No rules were deleted. Please try again."
+msgstr ""
+
+#. translators: First %s will replace plugin name, Second %s replace minimum PHP version
+#: App/Helpers/CompatibleCheck.php:19
+msgid "%1$s requires minimum PHP version %2$s"
+msgstr ""
+
+#. translators: First %s will replace plugin name, Second %s replace a minimum WordPress version
+#: App/Helpers/CompatibleCheck.php:27
+msgid "%1$s requires minimum WordPress version %2$s"
+msgstr ""
+
+#. translators: 1. %s will replace plugin name
+#: App/Helpers/CompatibleCheck.php:35
+msgid "%1$s requires WooCommerce to be installed and activated in order to be used."
+msgstr ""
+
+#. translators: 1. %s will replace plugin name, 2. %s replace WooCommerce version
+#: App/Helpers/CompatibleCheck.php:43
+msgid "%1$s requires minimum Woocommerce version %2$s"
+msgstr ""
+
+#. translators: 1. %s will replace plugin name
+#: App/Helpers/CompatibleCheck.php:50
+msgid "%1$s requires WPLoyalty to be installed and activated in order to be used."
+msgstr ""
+
+#. translators: 1. %s will replace plugin name, 2. %s replace WooCommerce version
+#: App/Helpers/CompatibleCheck.php:60
+msgid "%1$s requires minimum WPLoyalty version %2$s"
+msgstr ""
+
+#: App/Helpers/Validation.php:30
+msgid "This field"
+msgstr ""
+
+#: App/Helpers/Validation.php:43
+#: App/Helpers/Validation.php:83
+msgid "{field} is required"
+msgstr ""
+
+#: App/Helpers/Validation.php:46
+msgid "Rule name must be between 1 and 255 characters"
+msgstr ""
+
+#: App/Helpers/Validation.php:49
+msgid "Invalid category selected"
+msgstr ""
+
+#: App/Helpers/Validation.php:52
+msgid "Invalid status selected"
+msgstr ""
+
+#: App/Helpers/Validation.php:55
+#: App/Helpers/Validation.php:89
+msgid "{field} must be a number"
+msgstr ""
+
+#: App/Helpers/Validation.php:58
+msgid "Limit must be 1 or greater"
+msgstr ""
+
+#: App/Helpers/Validation.php:61
+msgid "Offset must be 0 or greater"
+msgstr ""
+
+#: App/Helpers/Validation.php:86
+msgid "Invalid frequency type selected"
+msgstr ""
+
+#: App/Helpers/Validation.php:92
+msgid "Batch limit must be 1 or greater"
+msgstr ""
+
+#: App/Helpers/Validation.php:95
+msgid "Week every must be 1 or greater"
+msgstr ""
+
+#: App/Helpers/Validation.php:98
+msgid "Month every must be 1 or greater"
+msgstr ""
+
+#: App/Helpers/Validation.php:101
+msgid "Invalid week day selected"
+msgstr ""
+
+#: App/Helpers/Validation.php:106
+msgid "Report includes is required for admin reports"
+msgstr ""
+
+#: App/Helpers/Validation.php:109
+msgid "Report includes must be an array"
+msgstr ""
+
+#: App/Helpers/Validation.php:113
+msgid "User report includes is required for user reports"
+msgstr ""
+
+#: App/Helpers/Validation.php:116
+msgid "User report includes must be an array"
+msgstr ""
+
+#: App/Helpers/Validation.php:122
+msgid "Schedule date is required for non-recurring rules"
+msgstr ""
+
+#: App/Setup.php:97
+msgid "Support"
+msgstr ""
+
+#: App/Views/Admin/create.php:8
+msgid "Create Email Reminder Rule"
+msgstr ""
+
+#: App/Views/Admin/create.php:12
+msgid "Back to Rules"
+msgstr ""
+
+#: App/Views/Admin/create.php:25
+msgid "Admin Report"
+msgstr ""
+
+#: App/Views/Admin/create.php:27
+msgid "Schedule automated reports to be sent to administrators with loyalty program insights and statistics."
+msgstr ""
+
+#: App/Views/Admin/create.php:31
+msgid "Create Admin Report"
+msgstr ""
+
+#: App/Views/Admin/create.php:40
+msgid "User Report"
+msgstr ""
+
+#: App/Views/Admin/create.php:42
+msgid "Schedule personalized reports to be sent to users about their points, rewards, and loyalty status."
+msgstr ""
+
+#: App/Views/Admin/create.php:46
+msgid "Create User Report"
+msgstr ""
+
+#: App/Views/Admin/form-admin.php:7
+msgid "Edit Admin Report"
+msgstr ""
+
+#: App/Views/Admin/form-admin.php:7
+msgid "Schedule Admin Report"
+msgstr ""
+
+#: App/Views/Admin/form-admin.php:8
+#: App/Views/Admin/form-user.php:8
+msgid "Update"
+msgstr ""
+
+#: App/Views/Admin/form-admin.php:8
+#: App/Views/Admin/form-user.php:8
+msgid "Save"
+msgstr ""
+
+#: App/Views/Admin/form-admin.php:33
+#: App/Views/Admin/form-user.php:33
+msgid "Cancel"
+msgstr ""
+
+#: App/Views/Admin/form-admin.php:53
+#: App/Views/Admin/form-user.php:53
+#: App/Views/Admin/rules-table.php:23
+msgid "Rule Name"
+msgstr ""
+
+#: App/Views/Admin/form-admin.php:58
+#: App/Views/Admin/form-user.php:58
+msgid "Enter a descriptive name for this rule"
+msgstr ""
+
+#: App/Views/Admin/form-admin.php:69
+#: App/Views/Admin/form-user.php:69
+msgid "Report should include"
+msgstr ""
+
+#: App/Views/Admin/form-admin.php:80
+msgid "X number of users became loyalty customer in the past XY days"
+msgstr ""
+
+#: App/Views/Admin/form-admin.php:81
+msgid "X points earned in the past XY days"
+msgstr ""
+
+#: App/Views/Admin/form-admin.php:82
+msgid "X points redeemed in the past XY days"
+msgstr ""
+
+#: App/Views/Admin/form-admin.php:83
+msgid "X rewards earned in the past XY days"
+msgstr ""
+
+#: App/Views/Admin/form-admin.php:84
+msgid "X rewards redeemed in the past XY days"
+msgstr ""
+
+#: App/Views/Admin/form-admin.php:85
+msgid "X orders placed using wployalty in the past XY days"
+msgstr ""
+
+#: App/Views/Admin/form-admin.php:86
+msgid "X value of orders placed using wployalty in the past XY days (orders placed using wployalty coupons)"
+msgstr ""
+
+#: App/Views/Admin/form-admin.php:107
+#: App/Views/Admin/form-user.php:173
+msgid "Is recurring?"
+msgstr ""
+
+#: App/Views/Admin/form-admin.php:113
+#: App/Views/Admin/form-user.php:179
+msgid "Enable recurring schedule"
+msgstr ""
+
+#: App/Views/Admin/form-admin.php:121
+#: App/Views/Admin/form-user.php:187
+msgid "Select date"
+msgstr ""
+
+#: App/Views/Admin/form-admin.php:136
+#: App/Views/Admin/form-user.php:202
+msgid "Frequency Type"
+msgstr ""
+
+#: App/Views/Admin/form-admin.php:145
+#: App/Views/Admin/form-user.php:211
+msgid "Week"
+msgstr ""
+
+#: App/Views/Admin/form-admin.php:150
+#: App/Views/Admin/form-user.php:216
+msgid "Month"
+msgstr ""
+
+#: App/Views/Admin/form-admin.php:155
+#: App/Views/Admin/form-user.php:221
+msgid "Year"
+msgstr ""
+
+#: App/Views/Admin/form-admin.php:166
+#: App/Views/Admin/form-admin.php:221
+#: App/Views/Admin/form-user.php:232
+#: App/Views/Admin/form-user.php:275
+msgid "Every"
+msgstr ""
+
+#: App/Views/Admin/form-admin.php:186
+msgid "%d%s week"
+msgstr ""
+
+#: App/Views/Admin/form-admin.php:195
+#: App/Views/Admin/form-user.php:249
+msgid "Day"
+msgstr ""
+
+#: App/Views/Admin/form-admin.php:230
+#: App/Views/Admin/form-user.php:284
+msgid "%d month"
+msgid_plural "%d months"
+msgstr[0] ""
+msgstr[1] ""
+
+#: App/Views/Admin/form-admin.php:238
+#: App/Views/Admin/form-user.php:292
+msgid "Date"
+msgstr ""
+
+#: App/Views/Admin/form-admin.php:247
+#: App/Views/Admin/form-user.php:301
+msgctxt "ordinal date"
+msgid "%d%s of the month"
+msgstr ""
+
+#: App/Views/Admin/form-admin.php:252
+#: App/Views/Admin/form-user.php:306
+msgid "End of every month"
+msgstr ""
+
+#: App/Views/Admin/form-admin.php:265
+#: App/Views/Admin/form-user.php:319
+msgid "Yearly once at"
+msgstr ""
+
+#: App/Views/Admin/form-admin.php:280
+msgid "Include banned user"
+msgstr ""
+
+#: App/Views/Admin/form-admin.php:286
+msgid "Include banned users in the report"
+msgstr ""
+
+#: App/Views/Admin/form-admin.php:294
+#: App/Views/Admin/form-user.php:334
+msgid "Batch Limit"
+msgstr ""
+
+#: App/Views/Admin/form-user.php:7
+msgid "Edit User Report"
+msgstr ""
+
+#: App/Views/Admin/form-user.php:7
+msgid "Schedule User Report"
+msgstr ""
+
+#: App/Views/Admin/form-user.php:81
+msgid "Points"
+msgstr ""
+
+#: App/Views/Admin/form-user.php:88
+msgid "Earned X points in the last XY days"
+msgstr ""
+
+#: App/Views/Admin/form-user.php:89
+msgid "Redeemed X points in the last XY days"
+msgstr ""
+
+#: App/Views/Admin/form-user.php:90
+msgid "X points away from reaching the next level"
+msgstr ""
+
+#: App/Views/Admin/form-user.php:91
+msgid "X points are going to expire in the upcoming XY days"
+msgstr ""
+
+#: App/Views/Admin/form-user.php:111
+msgid "Rewards"
+msgstr ""
+
+#: App/Views/Admin/form-user.php:118
+msgid "Earned X rewards in the last XY days"
+msgstr ""
+
+#: App/Views/Admin/form-user.php:119
+msgid "Used X rewards in the last XY days"
+msgstr ""
+
+#: App/Views/Admin/form-user.php:120
+msgid "X rewards will expire in the upcoming XY days"
+msgstr ""
+
+#: App/Views/Admin/form-user.php:140
+msgid "Levels"
+msgstr ""
+
+#: App/Views/Admin/form-user.php:147
+msgid "X points away from reaching 1st next level, Y points away from reaching 2nd next level, and so on"
+msgstr ""
+
+#: App/Views/Admin/form-user.php:148
+msgid "By reaching next level you get Y rewards (Achievement campaign benefits)"
+msgstr ""
+
+#: App/Views/Admin/form-user.php:149
+msgid "If you are next level user, you earn Campaigns configured with users next level"
+msgstr ""
+
+#: App/Views/Admin/main.php:14
+msgid "Note"
+msgstr ""
+
+#: App/Views/Admin/main.php:14
+msgid "Configure email reminder rules to automatically send reports to administrators and users about their loyalty points and rewards."
+msgstr ""
+
+#: App/Views/Admin/main.php:26
+msgid "Rules"
+msgstr ""
+
+#: App/Views/Admin/main.php:30
+#: App/Views/Admin/settings.php:6
+msgid "Settings"
+msgstr ""
+
+#: App/Views/Admin/rules-pagination.php:29
+msgid "Prev"
+msgstr ""
+
+#: App/Views/Admin/rules-pagination.php:105
+msgid "Next"
+msgstr ""
+
+#: App/Views/Admin/rules-table.php:24
+msgid "Type"
+msgstr ""
+
+#: App/Views/Admin/rules-table.php:25
+msgid "Schedule"
+msgstr ""
+
+#: App/Views/Admin/rules-table.php:26
+msgid "Status"
+msgstr ""
+
+#: App/Views/Admin/rules-table.php:27
+msgid "Last Sent"
+msgstr ""
+
+#: App/Views/Admin/rules-table.php:28
+msgid "Created"
+msgstr ""
+
+#: App/Views/Admin/rules-table.php:29
+msgid "Actions"
+msgstr ""
+
+#: App/Views/Admin/rules-table.php:40
+msgid "Unnamed Rule"
+msgstr ""
+
+#: App/Views/Admin/rules-table.php:46
+msgid "Report"
+msgstr ""
+
+#: App/Views/Admin/rules-table.php:57
+msgid "Every %d week(s) on %s"
+msgstr ""
+
+#: App/Views/Admin/rules-table.php:64
+msgid "Every %d month(s) on %s"
+msgstr ""
+
+#: App/Views/Admin/rules-table.php:66
+msgid "end of month"
+msgstr ""
+
+#: App/Views/Admin/rules-table.php:71
+msgid "Yearly on %s"
+msgstr ""
+
+#: App/Views/Admin/rules-table.php:87
+msgid "Active"
+msgstr ""
+
+#: App/Views/Admin/rules-table.php:90
+msgid "Paused"
+msgstr ""
+
+#: App/Views/Admin/rules-table.php:93
+msgid "Completed"
+msgstr ""
+
+#: App/Views/Admin/rules-table.php:96
+msgid "Unknown"
+msgstr ""
+
+#: App/Views/Admin/rules-table.php:106
+msgid "Never"
+msgstr ""
+
+#: App/Views/Admin/rules-table.php:141
+msgid "Edit Rule"
+msgstr ""
+
+#: App/Views/Admin/rules-table.php:145
+msgid "Delete Rule"
+msgstr ""
+
+#: App/Views/Admin/rules-table.php:160
+#: App/Views/Admin/rules.php:43
+msgid "No rules found"
+msgstr ""
+
+#: App/Views/Admin/rules-table.php:165
+msgid "No rules match your search for \"%s\""
+msgstr ""
+
+#: App/Views/Admin/rules-table.php:167
+msgid "No email reminder rules found."
+msgstr ""
+
+#: App/Views/Admin/rules.php:8
+msgid "Email Reminder Rules"
+msgstr ""
+
+#: App/Views/Admin/rules.php:13
+msgid "Delete"
+msgstr ""
+
+#: App/Views/Admin/rules.php:19
+msgid "Search rules by name..."
+msgstr ""
+
+#: App/Views/Admin/rules.php:28
+#: App/Views/Admin/rules.php:50
+msgid "Create Rule"
+msgstr ""
+
+#: App/Views/Admin/rules.php:44
+msgid "Get started by creating your first email reminder rule."
+msgstr ""
+
+#: App/Views/Admin/rules.php:65
+msgid "Per page:"
+msgstr ""
+
+#: App/Views/Admin/rules.php:86
+msgid "Go to page:"
+msgstr ""
+
+#: App/Views/Admin/rules.php:91
+msgid "Go"
+msgstr ""
+
+#: App/Views/Admin/settings.php:7
+msgid "Settings page content will be implemented here."
+msgstr ""
+
+#: App/Views/EmailTemplate.php:17
+msgid "Your Loyalty Points Balance"
+msgstr ""
+
+#: App/Views/EmailTemplate.php:101
+msgid "Hello %s!"
+msgstr ""
+
+#: App/Views/EmailTemplate.php:104
+msgid "We wanted to let you know your current loyalty points balance:"
+msgstr ""
+
+#: App/Views/EmailTemplate.php:105
+msgid "You have %d points available."
+msgstr ""
+
+#: App/Views/EmailTemplate.php:106
+msgid "Redeem your points for exciting rewards, such as:"
+msgstr ""
+
+#: App/Views/EmailTemplate.php:109
+msgid "Redeem Your Points Now"
+msgstr ""
+
+#: App/Views/EmailTemplate.php:113
+msgid "Thank you for being a loyal customer!"
+msgstr ""
+
+#: App/Views/EmailTemplate.php:116
+msgid "Visit Your Account"
+msgstr ""

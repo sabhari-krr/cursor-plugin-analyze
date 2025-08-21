@@ -1,0 +1,100 @@
+/*!********************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[3].use[1]!./node_modules/postcss-loader/dist/cjs.js!./src/styles/affiliate/index.css ***!
+  \********************************************************************************************************************************************************/
+.affiliate-container {
+    border-radius: 16px;
+}
+
+.affiliate-container .tab-list {
+        border-bottom: 2px solid grey;
+    }
+
+.affiliate-container .affiliate-header-section {
+        top: 176px;
+        left: 204px;
+        gap: 8px;
+    }
+
+.affiliate-container .affiliate-list {
+        border: 1px solid #E5E4E7;
+
+    }
+
+.affiliate-container .affiliate-list .list {
+            width: 100%;
+        }
+
+.affiliate-container .affiliate-list .list .affiliate-each-entry-row {
+                height: 70px;
+                padding: 16px 16px;
+            }
+
+.affiliate-container .affiliate-search {
+        height: 74px;
+        padding: 16px;
+        gap: 10px;
+    }
+
+.affiliate-container .affiliate-search input {
+            width: 80%;
+            height: 42px;
+            padding: 12px;
+            border-radius: 8px;
+            gap: 10px;
+            background: linear-gradient(0deg, #FFFFFF, #FFFFFF),
+            linear-gradient(0deg, #CCCACE, #CCCACE);
+            border-bottom: 1px solid #E5E4E7
+        }
+
+.affiliate-container .affiliate-detail {
+        border: 1px solid #E5E4E7;
+    }
+
+.create-affiliate-section {
+    border-radius: 16px;
+    gap: 24px;
+}
+
+.create-affiliate-section .top-section {
+        height: 88px;
+        padding: 20px 24px 20px 24px;
+        border-bottom: 1px;
+        gap: 10px;
+
+
+    }
+
+
+dialog.modal {
+    width: 50%;
+    min-height: 50%;
+    margin: auto auto;
+    padding: 1rem;
+}
+
+
+.tab-view .tab-list .tabs {
+            width: auto;
+            height: 10%;
+        }
+
+
+.tab-view .tab-list .tabs label {
+                padding-right: 1rem;
+            }
+
+
+.tab-view .tab-list .tabs label.active-tab {
+                color: white;
+            }
+
+.rwt-disabled {
+    pointer-events: none;
+}
+
+
+.toast-message {
+    margin-top: 2rem;
+}
+
+

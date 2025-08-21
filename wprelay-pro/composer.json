@@ -1,0 +1,21 @@
+{
+  "name": "relaywp/relaywp",
+  "autoload": {
+    "psr-4": {
+      "RelayWp\\Affiliate\\App\\": "app/",
+      "RelayWp\\Affiliate\\Core\\": "Core/",
+      "RelayWp\\Affiliate\\Pro\\": "Pro/"
+    }
+  },
+  "require": {
+    "vlucas/valitron": "^1.4",
+    "yahnis-elsts/plugin-update-checker": "v5.5",
+    "cartrabbit/request-helper": "dev-main"
+  },
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "git@github.com:wprelay/request-helper.git"
+    }
+  ]
+}

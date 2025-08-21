@@ -1,0 +1,14 @@
+{
+  "name": "wployalty/wployalty-point-email-reminder",
+  "description": "Wployalty point Email Reminder",
+  "type": "project",
+  "license": "GPL2 or Later",
+  "autoload": {
+    "psr-4": {
+      "WLPR\\": ""
+    }
+  },
+  "require": {
+    "woocommerce/action-scheduler": "^3.9"
+  }
+}

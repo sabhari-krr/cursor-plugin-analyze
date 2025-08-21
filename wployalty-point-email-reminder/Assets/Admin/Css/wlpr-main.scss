@@ -1,0 +1,2142 @@
+$theme-color: #4f47eb;
+$cursor: pointer;
+$color-white: #ffffff;
+$border-color: #e7e7ef;
+:root {
+  --wp-admin-theme-color: #4f47eb;
+}
+.alertify-notifier .ajs-message.ajs-error {
+  background-color: rgba(223, 87, 87, 0.95);
+  color: #fff;
+  border-radius: 4px;
+  box-shadow: rgba(244, 67, 54, 0.7) 0px 0px 15px 1px;
+  font-size: 0.92rem;
+  font-weight: 500;
+  font-family: Helvetica, sans-serif, Arial, sans-serif;
+}
+#wlpr-main-page {
+  font-family: Helvetica, sans-serif, Arial, sans-serif;
+  margin-right: 15px;
+  background-color: rgba(248, 248, 252, 1);
+  padding: 2rem;
+  box-sizing: border-box;
+  text-rendering: optimizeLegibility;
+  scroll-behavior: smooth;
+  outline: none;
+
+  a {
+    text-decoration: none;
+
+    &:focus {
+      outline: none;
+      box-shadow: none;
+    }
+  }
+
+  .wlpr-notice-header {
+    background: rgb(255, 226, 146);
+    border: 2px solid #ffba00;
+    border-radius: 5px;
+    padding: 1rem;
+    margin: 1rem 0;
+    font-size: 14px;
+  }
+
+  .wlpr-main-header {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    margin-bottom: 1rem;
+
+    h1 {
+      color: rgba(22, 31, 49, 1);
+      font-weight: 700;
+      font-size: 1.25rem;
+      line-height: 1.75rem;
+      min-width: max-content;
+    }
+
+    div {
+      position: relative;
+      z-index: 10;
+      margin-top: 0.375rem;
+      display: flex;
+      width: 100%;
+      align-items: center;
+      color: rgba(122, 129, 143, 1);
+      margin-right: calc(0.5rem * calc(1 - 0));
+      margin-left: calc(0.5rem * calc(1 - 0));
+    }
+  }
+
+  .wlpr-admin-main {
+    display: flex;
+    flex-direction: row-reverse;
+    height: 2.5rem;
+    gap: 1.5rem;
+
+    .menu-section {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 5px;
+      padding: 0 15px;
+      background-color: $theme-color;
+      color: $color-white;
+      border-radius: 6px;
+      cursor: $cursor;
+      width: 12%;
+    }
+
+    .back-to-loyalty {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      cursor: $cursor;
+
+      .wlpr-button-action {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 5px;
+        height: 100%;
+        padding: 0 15px;
+        background: #fff;
+        border: 1px solid $theme-color;
+        border-radius: 6px;
+        color: $theme-color;
+        cursor: $cursor;
+      }
+    }
+  }
+
+  .wlpr-admin-main .wlpr-admin-nav {
+    display: flex;
+    position: relative;
+    z-index: 10;
+    width: 100%;
+    align-items: center;
+    gap: 2px;
+    height: 74%;
+
+    a {
+      display: flex;
+      height: 50px;
+      align-items: center;
+      background-color: rgba(243, 243, 247, 1);
+      padding-left: 1.25rem;
+      padding-right: 1.25rem;
+      color: rgba(83, 88, 99, 1);
+      box-shadow: 0 0 rgba(0, 0, 0, 0), 0 0 rgba(0, 0, 0, 0),
+        0 0 rgba(0, 0, 0, 0);
+      text-decoration: none;
+      border: 1px solid rgba(243, 243, 247, 1);
+      font-size: 1rem;
+      gap: 5px;
+
+      &:hover {
+        background-color: rgba(255, 255, 255, 1);
+        color: $theme-color;
+        border: 1px solid #e7e7ef;
+        border-bottom-color: rgba(255, 255, 255, 1);
+      }
+
+      i {
+        font-size: 1.25rem;
+      }
+    }
+
+    .active-nav {
+      background-color: rgba(255, 255, 255, 1);
+      color: $theme-color;
+      border: 1px solid #e7e7ef;
+      border-bottom-color: rgba(255, 255, 255, 1);
+    }
+  }
+
+  .wlpr-parent {
+    background: #ffffff;
+    width: 100%;
+    border-radius: 0 12px 12px 12px;
+    border: 1px solid #dadae7;
+
+    .wlpr-body-content {
+      .wlpr-body-active-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 1.25rem 2rem;
+
+        &:not(.active-content) {
+          display: none;
+        }
+      }
+
+      .active-content {
+        display: flex;
+        min-height: 80vh;
+        justify-content: flex-start;
+      }
+
+      #wlpr-activity,
+      #wlpr-activity-details {
+        display: block;
+      }
+
+      .wlpr-table-heading-section {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        h4 {
+          font-size: 1rem;
+        }
+      }
+
+      .wlpr-table {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+
+        .wlpr-table-header {
+          display: grid;
+          grid-template-columns: repeat(3, minmax(0, 1fr));
+          gap: 1rem;
+          border-radius: 0.25rem;
+          padding: 1rem 1.25rem;
+          background-color: rgba(248, 248, 252, 1);
+
+          p {
+            white-space: nowrap;
+            margin: 0;
+            display: grid;
+            font-size: 12px;
+            font-weight: 600;
+            text-transform: uppercase;
+            line-height: 1rem;
+            color: rgba(83, 88, 89, 1);
+          }
+        }
+
+        .wlpr-table-body {
+          min-height: 300px;
+          position: relative;
+          display: flex;
+          width: 100%;
+          flex-direction: column;
+          align-items: center;
+
+          .wlpr-table-row {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            align-content: center;
+            gap: 1rem;
+            border-radius: 0.25rem;
+            border-bottom-width: 1px;
+            border-bottom-style: solid;
+            border-color: rgba(231, 231, 239, 1);
+            padding: 0.5rem 0;
+            width: 100%;
+
+            p {
+              margin: 5px;
+            }
+
+            .wlpr-text-nowrap {
+              white-space: nowrap;
+            }
+
+            div {
+              margin-left: 14px;
+            }
+
+            &:hover {
+              background: #e7e7ef42;
+            }
+          }
+        }
+      }
+
+      .wlpr-table-search-export {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+      }
+
+      .search-box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        border-radius: 4px;
+        border: 1px solid #ccc;
+
+        input {
+          outline: none;
+          border: none;
+          box-shadow: none;
+
+          &:focus {
+            outline: none;
+          }
+        }
+
+        a {
+          text-decoration: none;
+        }
+
+        i {
+          font-size: 16px;
+          padding: 6px;
+        }
+      }
+
+      .wlpr-heading-data {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: space-between;
+
+        .headings {
+          display: flex;
+          width: 100%;
+          align-items: center;
+          justify-content: space-between;
+        }
+
+        .heading-section {
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+          gap: 5px;
+
+          a {
+            margin-top: 5px;
+          }
+        }
+
+        .heading-buttons {
+          display: flex;
+          gap: 0.5rem;
+        }
+
+        .back-to-loyalty {
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-end;
+          align-items: center;
+          cursor: $cursor;
+          gap: 10px;
+        }
+      }
+
+      .colored-button {
+        background-color: $theme-color;
+        color: $color-white;
+      }
+
+      .non-colored-button {
+        color: $theme-color;
+        background: white;
+      }
+
+      .wlpr-body-data {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+        .wlpr-data-content-row {
+          margin-bottom: 20px;
+
+          label {
+            padding: 6px 12px 12px 6px;
+            display: inline-block;
+          }
+
+          .wlpr-data-content-label {
+            font-size: 14px;
+            color: #535863;
+            font-weight: bold;
+          }
+
+          .wlpr-data-content-field {
+            margin-top: -7px;
+          }
+
+          .wlpr-row-filed {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            align-items: center;
+          }
+
+          input[type="text"],
+          input[type="number"],
+          select {
+            width: 25%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            resize: vertical;
+            line-height: 15px;
+            max-width: 100%;
+          }
+
+          input[type="date"] {
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            width: 25%;
+          }
+        }
+
+        .wlpr-data-content-row:after {
+          content: "";
+          display: table;
+          clear: both;
+        }
+
+        .wlpr-migation-card-section {
+          display: grid;
+          grid-template-columns: repeat(3, minmax(0, 1fr));
+          gap: 1rem;
+
+          .wlpr-card {
+            padding: 12px;
+            border-radius: 8px;
+            position: relative;
+            min-height: max-content;
+            min-width: 180px;
+            font-size: 13px;
+            margin: 5px 0;
+            border: 1px solid rgba(50, 50, 93, 0.25);
+
+            &:not(.active) {
+              opacity: 0.5;
+              cursor: not-allowed;
+            }
+
+            h5,
+            p {
+              font-size: 14px;
+            }
+
+            &:hover {
+              border: 0;
+              box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+                rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+            }
+          }
+
+          .wlpr-button-section {
+            display: flex;
+          }
+        }
+      }
+
+      .wlpr-button-action {
+        padding: 0.5rem 1.25rem;
+        border: 1px solid $theme-color;
+        display: flex;
+        gap: 5px;
+        cursor: $cursor;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        min-width: max-content;
+        white-space: nowrap;
+        border-radius: 0.375rem;
+        font-size: 0.875rem;
+        line-height: 1.125rem;
+        font-weight: 500;
+        transition: all 0.1s ease;
+
+        i {
+          font-size: 1rem;
+        }
+      }
+
+      .wlpr-error-message {
+        color: red;
+        font-size: smaller;
+
+        .wlpr-active-error {
+          display: block;
+        }
+
+        &:not(.wlpr-active-error) {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .wlpr-button {
+    text-align: center;
+    padding: 8px 0;
+    cursor: pointer;
+    border-radius: 6px;
+    width: 100%;
+    border: 1px solid lightgray;
+    text-decoration: none;
+    color: $color-white;
+    background: $theme-color;
+
+    &:disabled {
+      cursor: not-allowed;
+    }
+  }
+
+  .wlpr-pagination {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .pagination {
+      display: flex;
+      justify-content: flex-end;
+      gap: 10px;
+      margin-right: 25px;
+      margin-bottom: 20px;
+
+      li {
+        background: $color-white;
+        border: 1px solid $border-color;
+        border-radius: 6px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: $cursor;
+        font-size: 15px;
+      }
+
+      a {
+        text-decoration: none;
+        color: inherit;
+        outline: none;
+        box-shadow: none;
+        padding: 12px;
+        font-weight: 500;
+        font-size: 13px;
+      }
+
+      .wlpr-current-page {
+        background-color: $theme-color;
+
+        a {
+          color: $color-white;
+        }
+      }
+    }
+  }
+
+  .dataTables_info {
+    margin: 0 30px 5px 30px;
+  }
+
+  #wlpr-activity-details {
+    .wlpr-activity-details-header {
+      display: flex;
+      justify-content: left;
+      align-items: center;
+      gap: 10px;
+
+      .wlpr-back-btn {
+        cursor: $cursor;
+      }
+    }
+
+    .wlpr-activity-status span {
+      width: 4rem;
+      padding: 4px 8px;
+      border-radius: 3px;
+    }
+
+    .wlpr-processing {
+      color: blue;
+      background: rgba(0, 0, 255, 0.3);
+    }
+
+    .wlpr-pending {
+      color: orange;
+      background: rgba(255, 165, 0, 0.3);
+    }
+
+    .wlpr-completed {
+      color: green;
+      background: rgba(0, 128, 0, 0.3);
+    }
+
+    .wlpr-activity-details-content {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+
+      .wlpr-description {
+        display: flex;
+        justify-content: flex-start;
+        gap: 10%;
+      }
+    }
+
+    .wlpr-job-details,
+    .wlpr-activity-log-list {
+      background: #ffffff;
+      box-shadow: 0 0 40px rgba(12, 17, 58, 0.08);
+      border-radius: 8px;
+      padding: 20px;
+    }
+  }
+
+  .wlpr-close-icon {
+    border: 1px solid;
+    border-radius: 50%;
+    padding: 1px 4px;
+  }
+
+  .wlpr-overlay-section {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 1000;
+  }
+
+  .wlpr-overlay-section.active {
+    visibility: visible;
+    opacity: 1;
+
+    select {
+      min-width: 19rem;
+      min-height: 45px;
+      border-color: #e7e7ef;
+      box-shadow: 0 0 0 1px #e7e7ef;
+      font-size: 13px;
+    }
+  }
+
+  .wlpr-overlay-section .wlpr-export-popup {
+    display: flex;
+    width: auto;
+    height: auto;
+    min-width: max-content;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    border-radius: 0.5rem;
+    background-color: white;
+
+    .wlpr-section {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      gap: 14px;
+
+      .wlpr-popup-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        i {
+          font-weight: bolder;
+          font-size: large;
+        }
+      }
+
+      .wlpr-popup-download-files {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        height: 450px;
+        overflow: scroll;
+        overflow-x: hidden;
+
+        &::-webkit-scrollbar {
+          width: 15px;
+        }
+
+        &::-webkit-scrollbar-thumb {
+          border: 4px solid rgba(0, 0, 0, 0);
+          background-clip: padding-box;
+          border-radius: 20px;
+          background-color: $theme-color;
+        }
+      }
+    }
+
+    .wlpr-export-content,
+    .wlpr-exported-content {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      gap: 10px;
+      height: auto;
+
+      .wlpr-exported-file {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 0.75rem;
+        border-radius: 0.25rem;
+        border-width: 1px;
+        border-color: rgba(231, 231, 239, 1);
+        background-color: rgba(246, 246, 254, 1);
+        padding: 0.75rem 1.25rem;
+
+        .wlpr-file-name {
+          display: flex;
+          justify-content: flex-start;
+          column-gap: 0.5rem;
+          align-items: center;
+
+          p {
+            font-size: 15px;
+          }
+        }
+
+        a {
+          text-decoration: none;
+          color: rgba(79, 71, 235, 1);
+        }
+      }
+    }
+
+    .wlpr-exported-content {
+      height: 400px;
+      max-height: max-content;
+    }
+
+    .wlpr-notification {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: rgba(164, 237, 198, 0.5);
+      padding: 0.5rem 1.25rem;
+      border-radius: 5px;
+      color: #3c434a;
+      font-size: 14px;
+    }
+
+    .wlpr-export-label {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+
+  .wlpr-overlay {
+    top: 10%;
+    left: 35%;
+    z-index: 50;
+    position: absolute;
+    height: auto;
+    width: auto;
+    min-width: 480px;
+    padding: 5px 20px 15px 20px;
+    background: white;
+    border-radius: 6px;
+  }
+
+  .select2-container {
+    height: auto;
+    outline: none;
+
+    .select2-selection--multiple {
+      display: flex;
+      flex: 1 1 0;
+      flex-wrap: wrap;
+      padding: 2px;
+      position: relative;
+      align-items: center;
+      border-radius: 0.25rem;
+      border-width: 1px;
+      border-color: #e7e7ef;
+      background-color: #fff;
+
+      li {
+        margin: 0;
+
+        input {
+          margin: 0;
+        }
+      }
+
+      .select2-selection__choice {
+        display: flex;
+        flex-direction: row-reverse;
+        background-color: #e7e7ef;
+        margin: 2px;
+        min-width: 0;
+        gap: 5px;
+        border-radius: 4px;
+        outline: none;
+        color: #161f31;
+        border: none;
+        padding: 4px 8px;
+
+        .select2-selection__choice__remove {
+          color: #161f31;
+        }
+      }
+    }
+  }
+
+  select {
+    min-width: 19rem;
+    min-height: 45px;
+    border-color: #e7e7ef;
+    box-shadow: 0 0 0 1px #e7e7ef;
+    font-size: 13px;
+
+    &:focus {
+      box-shadow: none;
+    }
+  }
+
+  /*popup*/
+  .wlpr-overlay-section {
+    .wlpr-popup {
+      display: flex;
+      flex-direction: column;
+      padding: 10px;
+      min-width: 400px;
+      gap: 1rem;
+    }
+
+    .wlpr-popup-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .wlpr-popup-body {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+
+    .wlpr-popup-foot {
+      button {
+        float: right;
+        padding: 10px;
+        border-radius: 6px;
+        background: $theme-color;
+        color: $color-white;
+        cursor: pointer;
+      }
+    }
+  }
+
+  /* cursor */
+  .wlpr-cursor {
+    cursor: pointer;
+  }
+
+  .wlpr-pop-select-button {
+    background: $theme-color;
+    border-radius: 6px;
+    box-sizing: border-box;
+    color: #ffffff;
+    padding: 8px;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 18px;
+    cursor: $cursor;
+  }
+}
+
+.wlpr-activity-button-section {
+  display: flex;
+  gap: 10px;
+}
+
+/* select2 css start */
+
+.select2-container--default
+  .select2-results__option--highlighted[aria-selected],
+.select2-container--default
+  .select2-results__option--highlighted[data-selected] {
+  background-color: $theme-color !important;
+  color: #fff !important;
+}
+
+.select2-container--default .select2-results__option[aria-selected="true"] {
+  color: #3c434a;
+  background-color: #ddd;
+}
+
+.select2-container--default .select2-results__option[data-selected="true"] {
+  background-color: #ddd;
+}
+
+.wc-wp-version-gte-53 .select2-dropdown--below {
+  box-shadow: 0 0 0 1px $theme-color, 0 2px 1px rgb(0 0 0 / 10%);
+}
+
+.wc-wp-version-gte-53 .select2-dropdown,
+.wc-wp-version-gte-53 .select2-container .select2-selection--single,
+.wc-wp-version-gte-53
+  .select2-container.select2-container--open
+  .select2-selection--single {
+  border-color: #e7e7ef;
+  box-shadow: 0 0 0 1px #e7e7ef;
+}
+
+.wc-wp-version-gte-53
+  .select2-container.select2-container--focus
+  .select2-selection--single,
+.wc-wp-version-gte-53
+  .select2-container.select2-container--open
+  .select2-selection--multiple,
+.wc-wp-version-gte-53
+  .select2-container.select2-container--open
+  .select2-selection--single {
+  box-shadow: 0 0 0 1px #e7e7ef;
+}
+
+.wc-wp-version-gte-53 .select2-container .select2-selection--single {
+  min-height: 45px;
+  //height: auto;
+}
+
+.wc-wp-version-gte-53
+  .select2-container
+  .select2-selection--single
+  .select2-selection__rendered {
+  padding-top: 8px;
+
+  &:hover {
+    color: #444;
+  }
+}
+
+.wc-wp-version-gte-53
+  .select2-container
+  .select2-selection--single
+  .select2-selection__arrow {
+  top: 8px;
+}
+
+.wc-wp-version-gte-53 .select2-container .select2-selection--multiple {
+  min-height: 45px;
+}
+
+/* select2 css end */
+@media only screen and (max-width: 830px) {
+  #wlpr-main-page
+    .wlpr-parent
+    .wlpr-body-content
+    .wlpr-body-data
+    .wlpr-migation-card-section {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  #wlpr-main-page .wlpr-parent .wlpr-body-content .wlpr-table-search-export {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.5rem;
+  }
+
+  .wlpr-rules-actions .wlpr-search-wrapper .wlpr-search-input {
+    min-width: 200px;
+  }
+}
+
+@media only screen and (max-width: 570px) {
+  #wlpr-main-page
+    .wlpr-parent
+    .wlpr-body-content
+    .wlpr-body-data
+    .wlpr-migation-card-section {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.alertify {
+  .ajs-header {
+    background-color: #ffc107; // amber background
+    color: #000; // black text
+    font-weight: bold;
+  }
+
+  .ajs-body {
+    color: #333;
+    background: #fff8e1;
+  }
+
+  .ajs-footer {
+    .ajs-ok {
+      background-color: #28a745 !important; // green
+      color: white !important;
+      border: none;
+    }
+
+    .ajs-cancel {
+      background-color: #dc3545 !important; // red
+      color: white !important;
+      border: none;
+    }
+
+    .ajs-buttons {
+      .ajs-button {
+        border-radius: 4px;
+        padding: 6px 14px;
+      }
+    }
+  }
+}
+
+// --- Create Page Styles ---
+/* Create Page Cards */
+.wlpr-create-main {
+    padding: 20px 0;
+}
+
+.wlpr-create-cards-row {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: stretch;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.wlpr-create-card {
+    flex: 1;
+    background: $color-white;
+    border: 1px solid $border-color;
+    border-radius: 8px;
+    padding: 24px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    transition: border-color 0.2s ease;
+    min-height: 200px;
+
+    &:hover {
+        border-color: $theme-color;
+    }
+}
+
+.wlpr-create-card-icon {
+    font-size: 32px;
+    color: $theme-color;
+    margin-bottom: 8px;
+}
+
+.wlpr-create-card-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+    margin: 0;
+}
+
+.wlpr-create-card-description {
+    font-size: 13px;
+    color: #666;
+    line-height: 1.4;
+    margin: 0;
+    flex-grow: 1;
+}
+
+.wlpr-create-card .wlpr-button-action {
+    margin-top: auto;
+    padding: 8px 16px;
+    font-size: 14px;
+    border-radius: 6px;
+    background: $color-white;
+    color: $theme-color;
+    border: 1px solid $theme-color;
+    transition: all 0.2s ease;
+
+    &:hover {
+        background: $theme-color;
+        color: $color-white;
+    }
+}
+
+/* Responsive Design for Create Page */
+@media only screen and (max-width: 768px) {
+    .wlpr-create-cards-row {
+        flex-direction: column;
+        gap: 16px;
+        padding: 0 16px;
+    }
+
+    .wlpr-create-card {
+        min-height: 180px;
+        padding: 20px 16px;
+    }
+
+    .wlpr-create-card-title {
+        font-size: 16px;
+    }
+
+    .wlpr-create-card-description {
+        font-size: 12px;
+    }
+}
+
+// --- Form Styles ---
+.wlpr-create-form-container {
+  background: $color-white;
+  border-radius: 0 12px 12px 12px;
+  border: 1px solid $border-color;
+  padding: 0;
+  margin: 0;
+
+  .wlpr-form-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    border-bottom: 1px solid $border-color;
+    background-color: rgba(248, 248, 252, 1);
+    border-radius: 0 12px 0 0;
+
+    .wlpr-form-title {
+      margin: 0;
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: #161f31;
+    }
+
+    .wlpr-form-actions {
+      display: flex;
+      gap: 0.75rem;
+    }
+  }
+
+  form {
+    padding: 1rem 2rem;
+  }
+
+  .wlpr-frequency-options {
+    margin-left: 1rem;
+    border-left: 3px solid $theme-color;
+    padding-left: 1rem;
+    margin-top: 0.25rem;
+  }
+
+  // Reduce vertical spacing between fields
+  .wlpr-data-content-row {
+    margin-bottom: 0.25rem; // Reduced from default 10px
+  }
+
+  // Accordion styling
+  .wlpr-accordion,
+  .wlpr-report-accordion {
+    border: 1px solid $border-color;
+    border-radius: 8px;
+    overflow: hidden;
+
+    .wlpr-accordion-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.75rem 1rem;
+      background-color: rgba(248, 248, 252, 1);
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: rgba(248, 248, 252, 0.8);
+      }
+
+      .wlpr-data-content-label {
+        margin: 0;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+      }
+
+      .wlpr-selected-count {
+        font-size: 0.8rem;
+        color: $theme-color;
+        font-weight: 500;
+      }
+
+      .wlpr-accordion-toggle {
+        transition: transform 0.3s ease;
+
+        i {
+          font-size: 16px;
+          color: #7a818f;
+        }
+      }
+
+      &.active .wlpr-accordion-toggle {
+        transform: rotate(180deg);
+      }
+    }
+
+    .wlpr-accordion-content {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease;
+
+      &.active {
+        max-height: 500px; // Adjust based on content
+      }
+    }
+  }
+
+  // Category sections styling
+  .wlpr-category-section {
+    border-bottom: 1px solid $border-color;
+
+    &:last-child {
+      border-bottom: none;
+    }
+
+    .wlpr-category-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.75rem 1rem;
+      background-color: rgba(248, 248, 252, 0.5);
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: rgba(248, 248, 252, 0.8);
+      }
+
+      h4 {
+        margin: 0;
+        font-size: 1rem;
+        font-weight: 600;
+        color: #161f31;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+      }
+
+      .wlpr-category-count {
+        font-size: 0.8rem;
+        color: $theme-color;
+        font-weight: 500;
+      }
+
+      i {
+        font-size: 14px;
+        color: #7a818f;
+        transition: transform 0.3s ease;
+      }
+
+      &.active i {
+        transform: rotate(180deg);
+      }
+    }
+
+    .wlpr-category-content {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease;
+
+      &.active {
+        max-height: 300px;
+      }
+    }
+  }
+
+  // Report options styling (inside accordion)
+  .wlpr-report-options {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 0.75rem;
+    background-color: $color-white;
+
+    label {
+      margin-bottom: 0; // Override default label spacing for this section
+      font-size: 0.9rem;
+      line-height: 1.4;
+    }
+  }
+
+  // Radio and checkbox styling
+  input[type="radio"], 
+  input[type="checkbox"] {
+    margin-right: 0.5rem;
+    accent-color: $theme-color;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 0.25rem; // Reduced from 0.5rem
+    
+    &:has(input[type="radio"]), 
+    &:has(input[type="checkbox"]) {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      // margin-bottom: 0.5rem; // Reduced from 0.75rem
+    }
+  }
+}
+
+/* Rules List Page Styles */
+.wlpr-rules-container {
+    background: $color-white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.wlpr-rules-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 32px;
+    border-bottom: 1px solid $border-color;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+
+    h2 {
+        margin: 0;
+        font-size: 18px;
+        font-weight: 600;
+        color: #2c3e50;
+    }
+
+    .wlpr-rules-actions {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+        .wlpr-button-action {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 12px 20px;
+            font-size: 14px;
+            font-weight: 500;
+            text-decoration: none;
+            border-radius: 6px;
+            transition: all 0.3s ease;
+
+            i {
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+.wlpr-rules-content {
+    padding: 0;
+}
+
+/* Empty State */
+.wlpr-empty-state {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 300px;
+  padding: 40px 20px;
+  margin: 20px 0;
+
+  .wlpr-empty-state-content {
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .wlpr-empty-state-icon {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+
+    i {
+      font-size: 48px;
+      color: #a0aec0;
+      opacity: 0.7;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      line-height: 1;
+      width: 48px;
+      height: 48px;
+    }
+  }
+
+  .wlpr-empty-state-text {
+    width: 100%;
+    margin-bottom: 24px;
+
+    h3 {
+      margin: 0 0 12px 0;
+      font-size: 18px;
+      font-weight: 500;
+      color: #2d3748;
+      text-align: center;
+      line-height: 1.3;
+    }
+
+    p {
+      margin: 0;
+      font-size: 14px;
+      color: #718096;
+      line-height: 1.5;
+      text-align: center;
+    }
+  }
+
+  .wlpr-empty-state-action {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+        .wlpr-button-action {
+            display: inline-flex;
+            align-items: center;
+      justify-content: center;
+      gap: 6px;
+      padding: 12px 24px;
+      font-size: 14px;
+            font-weight: 500;
+            text-decoration: none;
+      border-radius: 6px;
+      transition: all 0.2s ease;
+      min-width: 140px;
+
+            &:hover {
+        transform: translateY(-1px);
+            }
+        }
+    }
+}
+
+/* Rules Table */
+.wlpr-rules-table {
+    overflow-x: auto;
+
+    .wp-list-table {
+        border: none;
+        border-radius: 0;
+        box-shadow: none;
+
+        thead {
+            th {
+                background: #f8f9fa;
+                border-bottom: 2px solid $border-color;
+                font-weight: 600;
+                color: #495057;
+                padding: 16px 12px;
+                font-size: 14px;
+                text-transform: uppercase;
+                letter-spacing: 0.5px;
+            }
+        }
+
+        tbody {
+            tr {
+                transition: background-color 0.2s ease;
+
+                &:hover {
+                    background-color: #f8f9fa;
+                }
+
+                td {
+                    padding: 16px 12px;
+                    border-bottom: 1px solid $border-color;
+                    vertical-align: middle;
+                }
+            }
+        }
+    }
+}
+
+/* Rule Type Column */
+.wlpr-rule-type {
+    span {
+        font-weight: 500;
+        color: #2c3e50;
+    }
+}
+
+/* Rule Schedule Column */
+.wlpr-rule-schedule {
+    font-size: 14px;
+    color: #495057;
+    font-weight: 500;
+}
+
+/* Rule Status Column */
+.wlpr-status {
+    display: inline-flex;
+    align-items: center;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 13px;
+    font-weight: 400;
+
+    &.wlpr-status-active {
+        background: #d4edda;
+        color: #155724;
+    }
+
+    &.wlpr-status-paused {
+        background: #fff3cd;
+        color: #856404;
+    }
+
+    &.wlpr-status-completed {
+        background: #d1ecf1;
+        color: #0c5460;
+    }
+
+    &.wlpr-status-pending {
+        background: #f8d7da;
+        color: #721c24;
+    }
+}
+
+/* Rule Actions Column */
+.wlpr-rule-actions {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    a {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 32px;
+        height: 32px;
+        border-radius: 6px;
+        text-decoration: none;
+        transition: all 0.2s ease;
+        color: #6c757d;
+
+        &:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+        }
+
+        i {
+            font-size: 16px;
+        }
+
+        &.wlpr-action-edit {
+            background: rgba($theme-color, 0.1);
+            color: $theme-color;
+
+            &:hover {
+                background: $theme-color;
+                color: white;
+            }
+        }
+
+        &.wlpr-action-duplicate {
+            background: rgba($theme-color, 0.1);
+            color: $theme-color;
+
+            &:hover {
+                background: $theme-color;
+                color: white;
+            }
+        }
+
+        &.wlpr-action-delete {
+            background: rgba(#dc3545, 0.1);
+            color: #dc3545;
+
+            &:hover {
+                background: #dc3545;
+                color: white;
+            }
+        }
+    }
+}
+
+/* No Data Styling */
+.wlpr-no-data {
+    color: #adb5bd;
+    font-style: italic;
+    font-size: 13px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .wlpr-rules-header {
+        flex-direction: column;
+        gap: 16px;
+        text-align: center;
+
+        h2 {
+            font-size: 20px;
+        }
+
+    .wlpr-rules-actions {
+      flex-direction: row;
+      justify-content: center;
+      width: 100%;
+        }
+    }
+
+    .wlpr-rules-table {
+        .wp-list-table {
+            font-size: 13px;
+
+            thead th,
+            tbody td {
+                padding: 12px 8px;
+            }
+        }
+    }
+
+    .wlpr-rule-actions {
+        flex-direction: column;
+        gap: 4px;
+
+        a {
+            width: 28px;
+            height: 28px;
+
+            i {
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+@media (max-width: 480px) {
+  .wlpr-empty-state {
+    padding: 20px 16px;
+    min-height: 200px;
+
+    .wlpr-empty-state-content {
+      max-width: 100%;
+    }
+
+    .wlpr-empty-state-icon {
+      margin-bottom: 16px;
+
+      i {
+        font-size: 36px;
+      }
+    }
+
+    .wlpr-empty-state-text {
+      margin-bottom: 20px;
+
+      h3 {
+        font-size: 16px;
+        margin-bottom: 8px;
+      }
+
+      p {
+        font-size: 13px;
+      }
+    }
+
+    .wlpr-empty-state-action {
+      .wlpr-button-action {
+        padding: 10px 20px;
+        min-width: 120px;
+        font-size: 13px;
+      }
+    }
+  }
+
+  .wlpr-rules-actions {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+
+    .wlpr-search-wrapper {
+      margin-right: 0;
+      margin-bottom: 10px;
+      width: 100%;
+
+      .wlpr-search-input {
+        width: 100%;
+        max-width: 100%;
+      }
+    }
+
+    .wlpr-button-action {
+      width: 100%;
+      justify-content: center;
+    }
+  }
+
+  .wlpr-pagination {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+
+    .wlpr-per-page-selector {
+      width: 100%;
+      justify-content: center;
+    }
+
+    .wlpr-pagination-controls {
+      width: 100%;
+      justify-content: center;
+      flex-wrap: wrap;
+
+      .wlpr-goto-page {
+        margin-top: 1rem;
+        width: 100%;
+        justify-content: center;
+      }
+    }
+  }
+
+  .wlpr-rules-header {
+    padding: 15px;
+  }
+}
+
+// Pagination Styles
+.wlpr-pagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 2rem;
+  border-top: 1px solid #e1e1e1;
+  background: #f9f9f9;
+  border-radius: 0 0 8px 8px;
+  margin: 0;
+
+  .wlpr-per-page-selector {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+
+    label {
+      color: #666;
+      font-size: 14px;
+      font-weight: 500;
+      margin: 0;
+    }
+
+    .wlpr-per-page-select {
+      padding: 0.5rem 0.75rem;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      background: #fff;
+      color: #333;
+      font-size: 14px;
+      font-weight: 500;
+      min-width: 60px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+
+      &:focus {
+        outline: none;
+        border-color: #4f47eb;
+        box-shadow: 0 0 0 3px rgba(79, 71, 235, 0.1);
+      }
+    }
+  }
+
+  .wlpr-pagination-controls {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    .wlpr-pagination-prev,
+    .wlpr-pagination-next {
+      color: #666;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 500;
+      padding: 0.5rem 0.75rem;
+      border-radius: 4px;
+      transition: all 0.2s ease;
+
+      &:hover {
+        color: #4f47eb;
+        background: rgba(79, 71, 235, 0.1);
+      }
+    }
+
+    .wlpr-pagination-numbers {
+      display: flex;
+      align-items: center;
+      gap: 0.25rem;
+
+      .wlpr-pagination-number {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 2.25rem;
+        height: 2.25rem;
+        padding: 0 0.5rem;
+        background: #fff;
+        border: 1px solid #ddd;
+        border-radius: 6px;
+        color: #333;
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: 500;
+        transition: all 0.2s ease;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+
+        &:hover {
+          background: #f8f9fa;
+          border-color: #4f47eb;
+          color: #4f47eb;
+          box-shadow: 0 2px 6px rgba(79, 71, 235, 0.2);
+        }
+
+        &.wlpr-pagination-current {
+          background: #4f47eb;
+          border-color: #4f47eb;
+          color: #fff;
+          box-shadow: 0 2px 6px rgba(79, 71, 235, 0.3);
+        }
+      }
+
+      .wlpr-pagination-dots {
+        color: #666;
+        font-size: 14px;
+        font-weight: 500;
+        padding: 0 0.5rem;
+        cursor: default;
+        user-select: none;
+      }
+    }
+  }
+
+  // Go To Page section that's outside wlpr-pagination-controls (in rules.php)
+  .wlpr-goto-page {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-left: 1rem;
+
+    label {
+      color: #666;
+      font-size: 14px;
+      font-weight: 500;
+      margin: 0;
+      white-space: nowrap;
+    }
+
+    .wlpr-goto-page-input {
+      width: 60px;
+      padding: 0.3rem 0.5rem;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      background: #fff;
+      color: #333;
+      font-size: 14px;
+      text-align: center;
+
+      &:focus {
+        outline: none;
+        border-color: #4f47eb;
+        box-shadow: 0 0 0 2px rgba(79, 71, 235, 0.1);
+      }
+    }
+
+    .wlpr-goto-page-button {
+      padding: 0.5rem 0.75rem;
+      background: #b6b3f0;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      font-size: 14px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      display: inline-block;
+      text-decoration: none;
+      line-height: 1.2;
+      min-height: auto;
+      box-shadow: none;
+
+      &:hover {
+        background: #3f39d4;
+        box-shadow: 0 2px 6px rgba(79, 71, 235, 0.3);
+        color: #fff;
+      }
+
+      &:focus {
+        outline: none;
+        box-shadow: 0 0 0 2px rgba(79, 71, 235, 0.3);
+      }
+    }
+  }
+}
+
+
+
+// Rule Name Field Styling
+.wlpr-data-content-row {
+  .wlpr-data-content-field {
+    input[name="rule_name"] {
+      width: 100%;
+      max-width: 400px;
+      padding: 0.75rem 1rem;
+      border: 1px solid $border-color;
+      border-radius: 6px;
+      font-size: 14px;
+      color: #333;
+      background: #fff;
+      transition: all 0.2s ease;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+      margin-bottom: 10px;
+
+      &:focus {
+        outline: none;
+        border-color: $theme-color;
+        box-shadow: 0 0 0 3px rgba(79, 71, 235, 0.1);
+      }
+
+      &::placeholder {
+        color: #999;
+        font-style: italic;
+      }
+    }
+  }
+}
+
+// Rule Name in Table
+.wlpr-rule-name {
+  strong {
+    color: #333;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.4;
+  }
+}
+
+// Required field indicator
+.wlpr-data-content-label {
+  .required {
+    color: #dc3545;
+    font-weight: bold;
+  }
+}
+
+// Search Functionality
+.wlpr-rules-actions {
+  .wlpr-search-wrapper {
+    position: relative;
+    margin-right: 12px;
+    display: flex;
+    align-items: center;
+
+    .dashicons-search {
+      position: absolute;
+      left: 12px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: #666;
+      font-size: 16px;
+      z-index: 2;
+      pointer-events: none;
+    }
+
+    .wlpr-search-input {
+      height: 40px; // Match create button height
+      padding: 8px 40px 8px 36px;
+      border: 1px solid $border-color;
+      border-radius: 6px;
+      font-size: 14px;
+      color: #333;
+      background: #fff;
+      transition: all 0.2s ease;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+      min-width: 250px;
+      max-width: 350px;
+
+      &:focus {
+        outline: none;
+        border-color: $theme-color;
+        box-shadow: 0 0 0 3px rgba(79, 71, 235, 0.1);
+      }
+
+      &::placeholder {
+        color: #999;
+        font-style: italic;
+      }
+    }
+
+    .wlpr-clear-search {
+      position: absolute;
+      right: 8px;
+      top: 50%;
+      transform: translateY(-50%);
+      background: none;
+      border: none;
+      color: #666;
+      cursor: pointer;
+      padding: 4px;
+      border-radius: 4px;
+      transition: all 0.2s ease;
+      z-index: 2;
+      height: 20px;
+      width: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      &:hover {
+        background: rgba(79, 71, 235, 0.1);
+        color: $theme-color;
+      }
+    }
+  }
+}
+
+// Search Results Styling
+.wlpr-rules-table {
+  position: relative;
+  min-height: 100px;
+
+  &.wlpr-loading {
+    opacity: 0.6;
+    pointer-events: none;
+  }
+
+  .wlpr-loading-indicator {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 15px;
+    border-radius: 5px;
+
+    .spinner {
+      float: none;
+      margin: 0;
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+}
+
+// No Results Message
+.wlpr-no-results {
+  text-align: center;
+  padding: 3rem 2rem;
+  color: #666;
+
+  .wlpr-no-results-icon {
+    font-size: 48px;
+    color: #ccc;
+    margin-bottom: 1rem;
+  }
+
+  .wlpr-no-results-title {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    color: #333;
+  }
+
+  .wlpr-no-results-message {
+    font-size: 14px;
+    color: #666;
+  }
+}
+
+// Bulk actions styling
+.wlpr-bulk-delete-btn {
+  background-color: #dc3545;
+  color: white;
+  border: 1px solid #dc3545 !important;
+  margin-right: 15px; // Add spacing between delete button and search box
+  
+  &:hover {
+    background-color: #c82333;
+    border-color: #bd2130;
+  }
+  
+  &:disabled {
+    background-color: #6c757d;
+    border-color: #6c757d;
+    cursor: not-allowed;
+  }
+  
+  // Override plugin's blue theme border
+  &:focus {
+    border-color: #dc3545 !important;
+    box-shadow: 0 0 0 3px rgba(220, 53, 69, 0.1) !important;
+  }
+}
+
+// Checkbox column styling
+.check-column {
+  width: 30px;
+  text-align: center;
+  
+  input[type="checkbox"] {
+    margin: 0;
+    cursor: pointer;
+    // Remove any theme styling and keep standard appearance
+    background-color: transparent !important;
+    border: 1px solid #ccc !important;
+    
+    &:checked {
+      background-color: transparent !important;
+      border-color: #333 !important;
+      // Show only the checkmark, no background fill
+    }
+    
+    &:indeterminate {
+      background-color: transparent !important;
+      border-color: #333 !important;
+      // Show only the dash, no background fill
+    }
+    
+    &:focus {
+      border-color: #333 !important;
+      box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.1) !important;
+      background-color: transparent !important;
+    }
+  }
+}
+
+// Select all checkbox styling - same as individual checkboxes
+.wlpr-select-all-checkbox {
+  background-color: transparent !important;
+  border: 1px solid #ccc !important;
+  
+  &:checked {
+    background-color: transparent !important;
+    border-color: #333 !important;
+  }
+  
+  &:indeterminate {
+    background-color: transparent !important;
+    border-color: #333 !important;
+  }
+  
+  &:focus {
+    border-color: #333 !important;
+    box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.1) !important;
+    background-color: transparent !important;
+    }
+}

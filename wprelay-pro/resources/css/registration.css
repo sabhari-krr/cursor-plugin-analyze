@@ -1,0 +1,222 @@
+#wprelay-registration-form .wprelay-section {
+    border: 1px solid inherit;
+    border-radius: 5px;
+}
+
+#wprelay-registration-form p,
+input {
+    margin: 0 !important;
+}
+
+
+#wprelay-registration-form .wprelay-header-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid inherit;
+    padding: 0rem;
+}
+
+#wprelay-registration-form .wprelay-header-right {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+#wprelay-registration-form .wprelay-email-section p,
+#wprelay-registration-form .wprelay-email-section a {
+    padding: 0px !important;
+    margin: 0 !important;
+}
+
+#wprelay-registration-form .wprelay-personal-info-section div {
+    margin: 0 !important;
+}
+
+#wprelay-registration-form .wprelay-personal-info-section,
+#wprelay-registration-form .wprelay-personal--section,
+#wprelay-registration-form .wprelay-link-section,
+#wprelay-registration-form .wprelay-social-links-section,
+#wprelay-registration-form .wprelay-shipping-info-section {
+    border-radius: 10px;
+    padding: 0 !important;
+    margin: 0 !important;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#wprelay-registration-form .wprelay-each-section>div {
+    padding: 0rem 0 !important;
+}
+
+#wprelay-registration-form .wprelay-two-columns {
+    display: flex;
+    width: 100%;
+    gap: 1rem;
+}
+
+#wprelay-registration-form.hide {
+    display: none;
+}
+
+#wprelay-registration-form .wprelay-two-columns>div {
+    width: 50%;
+}
+
+
+#wprelay-registration-form .wprelay-save-button {
+    display: flex;
+    justify-content: end;
+}
+
+#wprelay-registration-form .wprelay-save-button button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    ;
+    gap: 20px;
+    width: 150px;
+}
+
+#wprelay-registration-form .wprelay-main-content {
+    margin: 1rem 0 !important;
+}
+
+#wprelay-registration-form .wprelay-text-danger {
+    color: red;
+    margin: 0 !important;
+}
+
+#wprelay-registration-form .wprelay-settings-tabcontent {
+    padding: 24px !important;
+    margin: 0 !important;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#wprelay-registration-form div span {
+    font-weight: 500;
+    font-size: medium;
+}
+
+#wprelay-registration-form .wprelay-field-section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#wprelay-registration-form .wprelay-field-section label {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    gap: 10px;
+}
+
+
+#wprelay-registration-form label {
+    font-weight: 500;
+    font-size: 14px;
+}
+
+#wprelay-registration-form input,
+select {
+    font-weight: 500;
+    padding: 0.5rem 0.75rem;
+}
+
+#wprelay-registration-form {
+    max-width: 100% !important;
+}
+
+#wprelay-registration-block {
+    max-width: 60%;
+    margin: auto;
+}
+
+@media screen and (max-width:640px) {
+
+    #wprelay-registration-block {
+        max-width: 90%;
+        margin: auto;
+    }
+
+    #wprelay-registration-form .wprelay-two-columns {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 1rem;
+    }
+
+    #wprelay-registration-form .wprelay-two-columns>div {
+        width: 100%;
+    }
+
+    #wprelay-registration-form .wprelay-save-button{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+#wprelay-registration-block>#confirmation-block {
+    width: 100%;
+}
+
+#wprelay-registration-block #confirmation-block.hide {
+    display: none;
+}
+
+.wprelay-mandatory-field {
+    color: red;
+}
+
+
+.wprelay-loader {
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    position: relative;
+    animation: wprelayRotate 1s linear infinite
+}
+
+.wprelay-loader::before {
+    content: "";
+    box-sizing: border-box;
+    position: absolute;
+    inset: 0px;
+    border-radius: 100%;
+    border: 5px solid #FFF;
+    animation: wprelayPrixClipFix 2s linear infinite;
+}
+
+@keyframes wprelayRotate {
+    100% {
+        transform: rotate(360deg)
+    }
+}
+
+@keyframes wprelayPrixClipFix {
+    0% {
+        clip-path: polygon(50% 50%, 0 0, 0 0, 0 0, 0 0, 0 0)
+    }
+
+    25% {
+        clip-path: polygon(50% 50%, 0 0, 100% 0, 100% 0, 100% 0, 100% 0)
+    }
+
+    50% {
+        clip-path: polygon(50% 50%, 0 0, 100% 0, 100% 100%, 100% 100%, 100% 100%)
+    }
+
+    75% {
+        clip-path: polygon(50% 50%, 0 0, 100% 0, 100% 100%, 0 100%, 0 100%)
+    }
+
+    100% {
+        clip-path: polygon(50% 50%, 0 0, 100% 0, 100% 100%, 0 100%, 0 0)
+    }
+}
